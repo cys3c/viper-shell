@@ -35,7 +35,7 @@ echo "You will have to click next three or four time to install python inside wi
 echo "You will have to click next three or four time to install python inside wine on kali...."
 #navigate to the correct directory with the python.msi inside and run command
 
-wine msiexec /i python-2.7.13.msi.1 /L*v log.txt
+wine msiexec /i python-2.7.13.msi /L*v log.txt
 
 
 #Install PyInstaller on wine
@@ -61,6 +61,6 @@ echo "usage $> python viper.py"
 # run python ViperClient.spec and change console=True to Console=False
 cd /home/viper-framework
 rm python-2.7.13.msi
-rm python-2.7.13.msi.1
+rm python-2.7.13.msi.*
 
 
