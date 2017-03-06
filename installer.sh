@@ -98,5 +98,6 @@ echo "Fast and Easy hacking"
 # run python ViperClient.spec and change console=True to Console=False
 rm python-2.7.13.msi
 rm python-2.7.13.msi.*
+python viper.py
 
 
