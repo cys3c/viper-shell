@@ -12,7 +12,7 @@ echo "building cross compiler to compile exe files on linux for windows....."
 sudo apt-get install wine winetricks
 winetricks python
 
-cd ~/.wine/drive_c/Python26
+#cd ~/.wine/drive_c/Python26
 
 #Note that python26 is installed, not including pip (is used to install pyinstaller). Fortunately, newer Python versions already include pip. 
 #Choose the proper version from Download Python (for me, python-2.7.10.msi) and install it on wine by:
@@ -23,9 +23,10 @@ cd ~/.wine/drive_c/Python26
 
 
 echo "fetching python msi 2.7.13 for cross compiling on linux for windows x86...."
-cd ~/.wine/drive_c/
-wget https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
 
+
+cd /home/viper-framework
+wget https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
 
 echo "Installing python msi 2.7.13 for cross compiling on linux for windows x86...."
 echo "You will have to click next three or four time to install python inside wine on kali...."
@@ -33,8 +34,8 @@ echo "You will have to click next three or four time to install python inside wi
 echo "You will have to click next three or four time to install python inside wine on kali...."
 #navigate to the correct directory with the python.msi inside and run command
 
-wine msiexec /i python-2.7.10.msi /L*v log.txt
-rm python-2.7.13.msi
+wine msiexec /i python-2.7.13.msi.1 /L*v log.txt
+
 
 #Install PyInstaller on wine
 
@@ -50,7 +51,6 @@ echo "usage $> python viper.py"
 echo "usage $> python viper.py"
 
 
-
 #to Convert ViperClient.py to exe run commands below
 
 # wine ~/.wine/drive_c/Python27/Scripts/pyinstaller.exe --onefile HelloWorld.py
@@ -58,6 +58,8 @@ echo "usage $> python viper.py"
 # wine  wine pyinstaller ViperClient.spec
 # modify ViperClient.spec
 # run python ViperClient.spec and change console=True to Console=False
-
+cd /home/viper-framework
+rm python-2.7.13.msi
+rm python-2.7.13.msi.1
 
 
