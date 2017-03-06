@@ -7,10 +7,11 @@ echo "setting permissions......"
 chmod +x viper.py
 chmod +x modules/handler/viperserver.py
 
+sudo apt-get update
 
 echo "building cross compiler to compile exe files on linux for windows....."
 sudo apt-get install wine winetricks
-winetricks python
+#winetricks python
 
 #cd ~/.wine/drive_c/Python26
 
