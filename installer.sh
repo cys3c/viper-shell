@@ -13,15 +13,20 @@ echo "This is the instalation for Viper Framework and before you run this script
 to payloads/ViperClient.py and change the IPADDESS and PORT number that you want client to call back to. 
 You will only have to run this instalation script once, we are not updating your kali but only grabing 
 specific instalation items for Viper. This progam has only been tested on X86 Kali 2.0 for PWK. If you have 
-not changed the ip address and port number inside ViperClient.py then hit Ctrl-T and go do that. Then run ./installer.sh 
-again and proceed if you have already changed the ip addess and port number inside ViperClient.py press any key to continue"
+not changed the ip address and port number inside ViperClient.py then hit Ctrl-T and go do that. 
+Then run ./installer.sh again and proceed if you have already changed the ip addess and port number inside 
+ViperClient.py press any key to continue"
 
 echo ""
+echo "Important first change this line to your own correct settings s.connect(('0.0.0.0', 8081)), 
+inside payloads/ViperClient.exe"
 echo ""
+echo ""
+echo "Viper will autostart and your should scroll through the instal to see what is happening"
+echo ""
+echo ""
+
 read -n 1 -s -p "Press any key to continue"
-
-
-
 
 sudo apt-get update
 
@@ -91,7 +96,7 @@ echo "run start apache2 service to start your server and deliver the client"
 
 echo "usage $> python viper.py"
 echo "Viper $> handler"
-echo "Fast and Easy hacking"
+echo "good luck on PWK"
 
 # wine  wine pyinstaller ViperClient.spec
 # modify ViperClient.spec
