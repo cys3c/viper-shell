@@ -12,6 +12,7 @@ echo "building cross compiler to compile exe files on linux for windows....."
 sudo apt-get install wine winetricks
 winetricks python
 
+cd ~/.wine/drive_c/Python26
 
 #Note that python26 is installed, not including pip (is used to install pyinstaller). Fortunately, newer Python versions already include pip. 
 #Choose the proper version from Download Python (for me, python-2.7.10.msi) and install it on wine by:
@@ -20,7 +21,9 @@ winetricks python
 #https://www.python.org/downloads/
 #We will fetch it for you
 
+
 echo "fetching python msi 2.7.13 for cross compiling on linux for windows x86...."
+cd ~/.wine/drive_c/
 wget https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
 
 
