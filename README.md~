@@ -25,7 +25,7 @@ command / usage
 
 start the handler and then do stuff
 
-deploy the client to the targets as py or exe 
+deploy the client to the targets as .py or .exe 
 
 commands
 [+] handler ========= > starts the viper server and waits for a call back" 

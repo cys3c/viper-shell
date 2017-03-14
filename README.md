@@ -2,11 +2,7 @@
 Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar).
 //=> Copyright (c) 2017 jinverar
 
-#   __   _____ ___ ___ ___    ___ ___    _   __  __ _____      _____  ___ _  __    _ _   
-#   \ \ / /_ _| _ \ __| _ \  | __| _ \  /_\ |  \/  | __\ \    / / _ \| _ \ |/ /  _| | |_  #
-#    \ V / | ||  _/ _||   /  | _||   / / _ \| |\/| | _| \ \/\/ / (_) |   / ' <  |_  .  _| #
-#     \_/ |___|_| |___|_|_\  |_| |_|_\/_/ \_\_|  |_|___| \_/\_/ \___/|_|_\_|\_\ |_     _| #
-#                                                                                 |_|_|   #
+VIPER FRAMEWORK
 
 """
 1. This is python framework designed to control remote agents that get deployed on computers in defense of exploitation frameworks!
