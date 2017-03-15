@@ -19,7 +19,7 @@ ViperClient.py press any key to continue"
 
 echo ""
 echo "Important first change this line to your own correct settings s.connect(('0.0.0.0', 8081)), 
-inside payloads/ViperClient.exe"
+inside payloads/ViperClient.py"
 echo ""
 echo ""
 echo "Viper will autostart and your should scroll through the instal to see what is happening"
