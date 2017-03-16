@@ -10,6 +10,15 @@ VIPER FRAMEWORK
 3. This framework can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions. 
 
 
+Requirements
+
+wine
+winetricks
+python-2.7.13.msi
+python 2.7
+pyinstaller-3.1.1
+future-0.16.0
+
 Usage
 
 start the viper console:
@@ -28,12 +37,12 @@ commands
 
 
 viper handler commands
-[*] grab*<filename> ========= > grabs the file and saves it to the local desktop as .txt"
-[*] getenv       ========= >  prints the system information"
-[*] getuid       ========= > Get the user level access of the shell"
-[*] SystemInfo   ========= > Get Fingerprint of the system"
-[*] capture      ========= > take images of the host machine "
-[*] Cover        ========= > Delete all traces of logs"
+[*] grab*<filename> ========= > grabs the file and saves it to the local desktop as .txt"#
+[*] getenv       ========= >  prints the system information"#
+[*] getuid       ========= > Get the user level access of the shell"#
+[*] SystemInfo   ========= > Get Fingerprint of the system"#
+[*] capture      ========= > take images of the host machine "#
+[*] Cover        ========= > Delete all traces of logs"#
 
 Contributing
 

