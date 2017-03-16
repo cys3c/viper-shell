@@ -26,6 +26,9 @@ wget https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
 
 
 echo "Installing python msi 2.7.13 for cross compiling on linux for windows x86...."
+echo "You will have to click next three or four time to install python inside wine on kali...."
+echo "You will have to click next three or four time to install python inside wine on kali...."
+echo "You will have to click next three or four time to install python inside wine on kali...."
 #navigate to the correct directory with the python.msi inside and run command
 
 wine msiexec /i python-2.7.10.msi /L*v log.txt

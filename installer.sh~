@@ -34,6 +34,8 @@ wine msiexec /i python-2.7.10.msi /L*v log.txt
 
 echo "Installing Pyinstaller on wine for cross compiling...."
 
+echo "You will have to click next three or four time to install python inside wine on kali...."
+
 cd ~/.wine/drive_c/Python27
 wine python.exe Scripts/pip.exe install pyinstaller
 cd -
