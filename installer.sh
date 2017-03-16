@@ -32,6 +32,7 @@ echo "You will have to click next three or four time to install python inside wi
 #navigate to the correct directory with the python.msi inside and run command
 
 wine msiexec /i python-2.7.10.msi /L*v log.txt
+os.system('rm python-2.7.13.msi')
 
 #Install PyInstaller on wine
 
