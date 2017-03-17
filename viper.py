@@ -5,6 +5,9 @@ import os
 import sys
 import readline
 import modules.handler.ViperServer as viperserver
+
+
+
 sys.dont_write_bytecode = True
 
 """
@@ -50,15 +53,13 @@ def console():
 		command = raw_input('$ Viper>> ')
 		command = command.split(" ") 
 
-		if command[0] == 'ls':
-			dire = '.'
-
-			if len(command) > 1:
-				dire = command[1]
-				print('\n'.join(os.listdir(dire)))
-			elif command[0] == 'exit':
-					exit()	
-
+		if 'ls' in command:
+			dirlist = os.listdir(".")
+			print(dirlist)
+		
+		if 'dir' in command:
+			dirlist = os.listdir(".")
+			print(dirlist)
 		
 		elif 'handler' in command:
 			print ( "[+] Starting server standby " + viperserver.main())
