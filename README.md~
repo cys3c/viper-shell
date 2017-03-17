@@ -43,7 +43,7 @@ viper main commands:
 
 [+] handler ========= > "starts the viper server and waits for a call back" 
 
-[*] client2exe ========= > "creates a basic exe file from viperclient.py and stores it inside payloads"; 
+[*] client2exe ========= > "creates a basic exe file from viperclient.py"; todo, change the ip address manualy in viperclient.py first. 
 
 Inside viper client modify these two lines with your ip address
 
