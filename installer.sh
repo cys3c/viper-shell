@@ -9,12 +9,12 @@ chmod +x modules/handler/ViperServer.py
 echo ""
 echo "permissions set now read this first"
 echo ""
-echo "This is the instalation for Viper Framework and before you run this script make sure that you navigate 
+echo "This is the install for Viper Framework and before you run this script make sure that you navigate 
 to payloads/ViperClient.py and change the IPADDESS and PORT number that you want client to call back to. 
-You will only have to run this instalation script once, we are not updating your kali but only grabing 
-specific instalation items for Viper. This progam has only been tested on X86 Kali 2.0 for PWK. If you have 
-not changed the ip address and port number inside ViperClient.py then hit Ctrl-T and go do that. 
-Then run ./installer.sh again and proceed if you have already changed the ip addess and port number inside 
+You will only have to run this installation script once, we are not updating your kali but only grabbing 
+specific installation items for Viper. This program has only been tested on X86 Kali 2.0 for PWK. If you have 
+not changed the IP address and port number inside ViperClient.py then hit Ctrl-T and go do that. 
+Then run ./installer.sh again and proceed if you have already changed the IP address and port number inside 
 ViperClient.py press any key to continue"
 
 echo ""
@@ -22,7 +22,7 @@ echo "Important first change this line to your own correct settings s.connect(('
 inside payloads/ViperClient.py"
 echo ""
 echo ""
-echo "Viper will autostart and your should scroll through the instal to see what is happening"
+echo "Viper will autostart and your should scroll through the install to see what is happening"
 echo ""
 echo ""
 
@@ -30,7 +30,7 @@ read -n 1 -s -p "Press any key to continue"
 
 sudo apt-get update
 
-echo "building cross compiler to compile exe files on linux for windows....."
+echo "building cross compiler to compile exec files on Linux for windows....."
 sudo apt-get install wine winetricks
 #winetricks python
 

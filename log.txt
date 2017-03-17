@@ -1,77 +1,65 @@
-Action 06:00:15: LaunchConditions. Evaluating launch conditions
-Action start 06:00:15: LaunchConditions.
-Action ended 06:00:15: LaunchConditions. Return value 0.
-Action 06:00:48: FindRelatedProducts. Searching for related applications
-Action start 06:00:48: FindRelatedProducts.
-Action ended 06:00:48: FindRelatedProducts. Return value 0.
-Action 06:00:48: AppSearch. Searching for installed applications
-Action start 06:00:48: AppSearch.
-Action ended 06:00:48: AppSearch. Return value 0.
-Action 06:00:48: CCPSearch. Searching for qualifying products
-Action start 06:00:48: CCPSearch.
-Action ended 06:00:48: CCPSearch. Return value 0.
-Action 06:00:48: RMCCPSearch. Searching for qualifying products
-Action start 06:00:48: RMCCPSearch.
-Action ended 06:00:48: RMCCPSearch. Return value 0.
-Action start 06:00:48: ValidateProductID.
-Action ended 06:00:48: ValidateProductID. Return value 0.
-Action 06:00:48: CostInitialize. Computing space requirements
-Action start 06:00:48: CostInitialize.
-Action ended 06:00:49: CostInitialize. Return value 0.
-Action 06:00:49: FileCost. Computing space requirements
-Action start 06:00:49: FileCost.
-Action ended 06:00:49: FileCost. Return value 0.
-Action start 06:00:49: IsolateComponents.
-Action ended 06:00:49: IsolateComponents. Return value 0.
-Action 06:00:49: CostFinalize. Computing space requirements
-Action start 06:00:49: CostFinalize.
-Action ended 06:00:49: CostFinalize. Return value 0.
-Action 06:00:49: MigrateFeatureStates. Migrating feature states from related applications
-Action start 06:00:49: MigrateFeatureStates.
-Action ended 06:00:49: MigrateFeatureStates. Return value 0.
-Action start 06:01:05: ExecuteAction.
-Action 06:01:05: LaunchConditions. Evaluating launch conditions
-Action start 06:01:05: LaunchConditions.
-Action ended 06:01:05: LaunchConditions. Return value 0.
-Action 06:01:05: FindRelatedProducts. Searching for related applications
-Action start 06:01:05: FindRelatedProducts.
-Action ended 06:01:05: FindRelatedProducts. Return value 0.
-Action 06:01:05: AppSearch. Searching for installed applications
-Action start 06:01:05: AppSearch.
-Action ended 06:01:05: AppSearch. Return value 0.
-Action 06:01:05: CCPSearch. Searching for qualifying products
-Action start 06:01:05: CCPSearch.
-Action ended 06:01:05: CCPSearch. Return value 0.
-Action 06:01:05: RMCCPSearch. Searching for qualifying products
-Action start 06:01:05: RMCCPSearch.
-Action ended 06:01:05: RMCCPSearch. Return value 0.
-Action start 06:01:05: ValidateProductID.
-Action ended 06:01:05: ValidateProductID. Return value 0.
-Action 06:01:05: CostInitialize. Computing space requirements
-Action start 06:01:05: CostInitialize.
-Action ended 06:01:05: CostInitialize. Return value 0.
-Action 06:01:05: FileCost. Computing space requirements
-Action start 06:01:05: FileCost.
-Action ended 06:01:05: FileCost. Return value 0.
-Action start 06:01:05: IsolateComponents.
-Action ended 06:01:05: IsolateComponents. Return value 0.
-Action 06:01:05: CostFinalize. Computing space requirements
-Action start 06:01:05: CostFinalize.
-Action ended 06:01:05: CostFinalize. Return value 0.
-Action 06:01:05: SetODBCFolders. Initializing ODBC directories
-Action start 06:01:05: SetODBCFolders.
-Action ended 06:01:05: SetODBCFolders. Return value 0.
-Action 06:01:05: MigrateFeatureStates. Migrating feature states from related applications
-Action start 06:01:05: MigrateFeatureStates.
-Action ended 06:01:05: MigrateFeatureStates. Return value 0.
-Action 06:01:05: InstallValidate. Validating install
-Action start 06:01:05: InstallValidate.
-Action ended 06:01:05: InstallValidate. Return value 0.
-Action start 06:01:05: InstallInitialize.
-Action ended 06:01:05: InstallInitialize. Return value 0.
-Action 06:01:05: RemoveExistingProducts. Removing applications
-Action start 06:01:05: RemoveExistingProducts.
-Action ended 06:01:05: RemoveExistingProducts. Return value 0.
+Action 17:43:52: LaunchConditions. Evaluating launch conditions
+Action start 17:43:52: LaunchConditions.
+Action ended 17:43:52: LaunchConditions. Return value 0.
+Action 17:43:53: FindRelatedProducts. Searching for related applications
+Action start 17:43:53: FindRelatedProducts.
+Action ended 17:43:53: FindRelatedProducts. Return value 0.
+Action 17:43:53: AppSearch. Searching for installed applications
+Action start 17:43:53: AppSearch.
+Action ended 17:43:53: AppSearch. Return value 0.
+Action start 17:43:53: ValidateProductID.
+Action ended 17:43:53: ValidateProductID. Return value 0.
+Action 17:43:53: CostInitialize. Computing space requirements
+Action start 17:43:53: CostInitialize.
+Action ended 17:43:53: CostInitialize. Return value 0.
+Action 17:43:53: FileCost. Computing space requirements
+Action start 17:43:53: FileCost.
+Action ended 17:43:53: FileCost. Return value 0.
+Action start 17:43:53: IsolateComponents.
+Action ended 17:43:53: IsolateComponents. Return value 0.
+Action 17:43:53: CostFinalize. Computing space requirements
+Action start 17:43:53: CostFinalize.
+Action ended 17:43:54: CostFinalize. Return value 0.
+Action 17:43:54: MigrateFeatureStates. Migrating feature states from related applications
+Action start 17:43:54: MigrateFeatureStates.
+Action ended 17:43:54: MigrateFeatureStates. Return value 0.
+Action start 17:43:58: ExecuteAction.
+Action 17:43:58: LaunchConditions. Evaluating launch conditions
+Action start 17:43:58: LaunchConditions.
+Action ended 17:43:58: LaunchConditions. Return value 0.
+Action 17:43:58: FindRelatedProducts. Searching for related applications
+Action start 17:43:58: FindRelatedProducts.
+Action ended 17:43:58: FindRelatedProducts. Return value 0.
+Action 17:43:58: AppSearch. Searching for installed applications
+Action start 17:43:58: AppSearch.
+Action ended 17:43:58: AppSearch. Return value 0.
+Action start 17:43:58: ValidateProductID.
+Action ended 17:43:58: ValidateProductID. Return value 0.
+Action 17:43:58: CostInitialize. Computing space requirements
+Action start 17:43:58: CostInitialize.
+Action ended 17:43:58: CostInitialize. Return value 0.
+Action 17:43:58: FileCost. Computing space requirements
+Action start 17:43:58: FileCost.
+Action ended 17:43:58: FileCost. Return value 0.
+Action start 17:43:58: IsolateComponents.
+Action ended 17:43:58: IsolateComponents. Return value 0.
+Action 17:43:58: CostFinalize. Computing space requirements
+Action start 17:43:58: CostFinalize.
+Action ended 17:43:59: CostFinalize. Return value 0.
+Action 17:43:59: SetODBCFolders. Initializing ODBC directories
+Action start 17:43:59: SetODBCFolders.
+Action ended 17:43:59: SetODBCFolders. Return value 0.
+Action 17:43:59: MigrateFeatureStates. Migrating feature states from related applications
+Action start 17:43:59: MigrateFeatureStates.
+Action ended 17:43:59: MigrateFeatureStates. Return value 0.
+Action 17:43:59: InstallValidate. Validating install
+Action start 17:43:59: InstallValidate.
+Action ended 17:43:59: InstallValidate. Return value 0.
+Action start 17:43:59: InstallInitialize.
+Action ended 17:43:59: InstallInitialize. Return value 0.
+Action 17:43:59: RemoveExistingProducts. Removing applications
+Action start 17:43:59: RemoveExistingProducts.
+Action ended 17:43:59: RemoveExistingProducts. Return value 0.
 1: sxsdelca 2: traceop 3: 1256 4: 0 
 1: sxsdelca 2: traceop 3: 1257 4: 0 
 1: sxsdelca 2: traceop 3: 1258 4: 0 
@@ -80,202 +68,86 @@ Action ended 06:01:05: RemoveExistingProducts. Return value 0.
 1: sxsdelca 2: traceop 3: 1289 4: 0 
 1: sxsdelca 2: traceop 3: 1290 4: 0 
 1: sxsdelca 2: traceop 3: 1292 4: 0 
-1: sxsdelca 2: traceop 3: 1306 4: 0 
-1: sxsdelca 2: traceop 3: 1307 4: 0 
-1: sxsdelca 2: traceop 3: 796 4: 0 
-1: sxsdelca 2: traceop 3: 801 4: 0 
-1: sxsdelca 2: traceop 3: 802 4: 0 
-1: sxsdelca 2: traceop 3: 803 4: 0 
-1: sxsdelca 2: traceop 3: 805 4: 0 
-1: sxsdelca 2: traceop 3: 812 4: 0 
-1: sxsdelca 2: traceop 3: 813 4: 0 
-1: sxsdelca 2: traceop 3: 814 4: 0 
-1: sxsdelca 2: traceop 3: 819 4: 0 
-1: sxsdelca 2: traceop 3: 820 4: 0 
-1: sxsdelca 2: traceop 3: 821 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 259 
-1: sxsdelca 2: traceop 3: 1311 4: 0 
-1: sxsdelca 2: traceop 3: 1312 4: 0 
-1: sxsdelca 2: traceop 3: 1077 4: 0 
-1: sxsdelca 2: traceop 3: 1081 4: 0 
-1: sxsdelca 2: traceop 3: 1083 4: 0 
-1: sxsdelca 2: traceop 3: 1087 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1097 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1101 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1105 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1109 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1113 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1117 4: 0 
-1: sxsdelca 2: traceop 3: 1121 4: 0 
-1: sxsdelca 2: traceop 3: 1313 4: 0 
-1: sxsdelca 2: traceop 3: 1314 4: 0 
-1: sxsdelca: Added reg value for  2: downlevel_payload.30729.01.Microsoft_VC90_CRT_x86.SP.D8D85FD0_537C_3A3A_9BEC_7A1B426637EC 
+1: sxsdelca 2: traceop 3: 1318 4: 0 
+1: sxsdelca: Skipping component  2: downlevel_payload.30729.01.Microsoft_VC90_CRT_x86.SP.D8D85FD0_537C_3A3A_9BEC_7A1B426637EC 
 1: sxsdelca 2: traceop 3: 1284 4: 0 
 1: sxsdelca 2: traceop 3: 1288 4: 0 
 1: sxsdelca 2: traceop 3: 1289 4: 0 
 1: sxsdelca 2: traceop 3: 1290 4: 0 
 1: sxsdelca 2: traceop 3: 1292 4: 0 
-1: sxsdelca 2: traceop 3: 796 4: 0 
-1: sxsdelca 2: traceop 3: 801 4: 0 
-1: sxsdelca 2: traceop 3: 802 4: 0 
-1: sxsdelca 2: traceop 3: 803 4: 0 
-1: sxsdelca 2: traceop 3: 805 4: 0 
-1: sxsdelca 2: traceop 3: 812 4: 0 
-1: sxsdelca 2: traceop 3: 813 4: 0 
-1: sxsdelca 2: traceop 3: 814 4: 0 
-1: sxsdelca 2: traceop 3: 819 4: 0 
-1: sxsdelca 2: traceop 3: 820 4: 0 
-1: sxsdelca 2: traceop 3: 821 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 259 
-1: sxsdelca 2: traceop 3: 1311 4: 0 
-1: sxsdelca 2: traceop 3: 1312 4: 0 
-1: sxsdelca 2: traceop 3: 1077 4: 0 
-1: sxsdelca 2: traceop 3: 1081 4: 0 
-1: sxsdelca 2: traceop 3: 1083 4: 0 
-1: sxsdelca 2: traceop 3: 1087 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1097 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1101 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1105 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1109 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1113 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1117 4: 0 
-1: sxsdelca 2: traceop 3: 1121 4: 0 
-1: sxsdelca 2: traceop 3: 1313 4: 0 
-1: sxsdelca 2: traceop 3: 1314 4: 0 
-1: sxsdelca: Added reg value for  2: downlevel_manifest.30729.01.Microsoft_VC90_CRT_x86.SP.D8D85FD0_537C_3A3A_9BEC_7A1B426637EC 
+1: sxsdelca 2: traceop 3: 1318 4: 0 
+1: sxsdelca: Skipping component  2: downlevel_manifest.30729.01.Microsoft_VC90_CRT_x86.SP.D8D85FD0_537C_3A3A_9BEC_7A1B426637EC 
 1: sxsdelca 2: traceop 3: 1284 4: 0 
 1: sxsdelca 2: traceop 3: 1288 4: 0 
 1: sxsdelca 2: traceop 3: 1289 4: 0 
 1: sxsdelca 2: traceop 3: 1290 4: 0 
 1: sxsdelca 2: traceop 3: 1292 4: 0 
-1: sxsdelca 2: traceop 3: 796 4: 0 
-1: sxsdelca 2: traceop 3: 801 4: 0 
-1: sxsdelca 2: traceop 3: 802 4: 0 
-1: sxsdelca 2: traceop 3: 803 4: 0 
-1: sxsdelca 2: traceop 3: 805 4: 0 
-1: sxsdelca 2: traceop 3: 812 4: 0 
-1: sxsdelca 2: traceop 3: 813 4: 0 
-1: sxsdelca 2: traceop 3: 814 4: 0 
-1: sxsdelca 2: traceop 3: 819 4: 0 
-1: sxsdelca 2: traceop 3: 820 4: 0 
-1: sxsdelca 2: traceop 3: 821 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 0 
-1: sxsdelca 2: traceop 3: 831 4: 0 
-1: sxsdelca 2: traceop 3: 827 4: 259 
-1: sxsdelca 2: traceop 3: 1311 4: 0 
-1: sxsdelca 2: traceop 3: 1312 4: 0 
-1: sxsdelca 2: traceop 3: 1077 4: 0 
-1: sxsdelca 2: traceop 3: 1081 4: 0 
-1: sxsdelca 2: traceop 3: 1083 4: 0 
-1: sxsdelca 2: traceop 3: 1087 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1097 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1101 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1105 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1109 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1113 4: 0 
-1: sxsdelca 2: traceop 3: 1093 4: 0 
-1: sxsdelca 2: traceop 3: 1117 4: 0 
-1: sxsdelca 2: traceop 3: 1121 4: 0 
-1: sxsdelca 2: traceop 3: 1313 4: 0 
-1: sxsdelca 2: traceop 3: 1314 4: 0 
-1: sxsdelca: Added reg value for  2: downlevel_manifest.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584 
+1: sxsdelca 2: traceop 3: 1318 4: 0 
+1: sxsdelca: Skipping component  2: downlevel_manifest.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584 
 1: sxsdelca 2: traceop 3: 1284 4: 259 
 1: sxsdelca 2: SxsMsmInstall completed 3: 0 4: 0 
-Action 06:01:05: AllocateRegistrySpace. Allocating registry space
-Action start 06:01:05: AllocateRegistrySpace.
-Free space: 0
-Action ended 06:01:05: AllocateRegistrySpace. Return value 0.
-Action 06:01:05: ProcessComponents. Updating component registration
-Action start 06:01:05: ProcessComponents.
-Action ended 06:01:05: ProcessComponents. Return value 0.
-Action 06:01:05: UnpublishComponents. Unpublishing Qualified Components
-Action start 06:01:05: UnpublishComponents.
-Action ended 06:01:05: UnpublishComponents. Return value 0.
-Action 06:01:05: MsiUnpublishAssemblies. Unpublishing assembly information
-Action start 06:01:05: MsiUnpublishAssemblies.
-Action ended 06:01:05: MsiUnpublishAssemblies. Return value 0.
-Action 06:01:05: UnpublishFeatures. Unpublishing Product Features
-Action start 06:01:05: UnpublishFeatures.
-Action ended 06:01:05: UnpublishFeatures. Return value 0.
-Action 06:01:05: StopServices. Stopping services
-Action start 06:01:05: StopServices.
-Action ended 06:01:05: StopServices. Return value 0.
-Action 06:01:05: DeleteServices. Deleting services
-Action start 06:01:05: DeleteServices.
-Action ended 06:01:05: DeleteServices. Return value 0.
-Action 06:01:05: UnregisterComPlus. Unregistering COM+ Applications and Components
-Action start 06:01:05: UnregisterComPlus.
-Action ended 06:01:05: UnregisterComPlus. Return value 0.
-Action 06:01:05: SelfUnregModules. Unregistering modules
-Action start 06:01:05: SelfUnregModules.
-Action ended 06:01:05: SelfUnregModules. Return value 0.
-Action 06:01:05: UnregisterTypeLibraries. Unregistering type libraries
-Action start 06:01:05: UnregisterTypeLibraries.
-Action ended 06:01:05: UnregisterTypeLibraries. Return value 0.
-Action 06:01:05: RemoveODBC. Removing ODBC components
-Action start 06:01:06: RemoveODBC.
-Action ended 06:01:06: RemoveODBC. Return value 0.
-Action 06:01:06: UnregisterFonts. Unregistering fonts
-Action start 06:01:06: UnregisterFonts.
-Action ended 06:01:06: UnregisterFonts. Return value 0.
-Action 06:01:06: RemoveRegistryValues. Removing system registry values
-Action start 06:01:06: RemoveRegistryValues.
-Action ended 06:01:06: RemoveRegistryValues. Return value 0.
-Action 06:01:06: UnregisterClassInfo. Unregister Class servers
-Action start 06:01:06: UnregisterClassInfo.
-Action ended 06:01:06: UnregisterClassInfo. Return value 0.
-Action 06:01:06: UnregisterExtensionInfo. Unregistering extension servers
-Action start 06:01:06: UnregisterExtensionInfo.
-Action ended 06:01:06: UnregisterExtensionInfo. Return value 0.
-Action 06:01:06: UnregisterProgIdInfo. Unregistering program identifiers
-Action start 06:01:06: UnregisterProgIdInfo.
-Action ended 06:01:06: UnregisterProgIdInfo. Return value 0.
-Action 06:01:06: UnregisterMIMEInfo. Unregistering MIME info
-Action start 06:01:06: UnregisterMIMEInfo.
-Action ended 06:01:06: UnregisterMIMEInfo. Return value 0.
-Action 06:01:06: RemoveIniValues. Removing INI files entries
-Action start 06:01:06: RemoveIniValues.
-Action ended 06:01:06: RemoveIniValues. Return value 0.
-Action 06:01:06: RemoveShortcuts. Removing shortcuts
-Action start 06:01:06: RemoveShortcuts.
-Action ended 06:01:06: RemoveShortcuts. Return value 0.
-Action 06:01:06: RemoveEnvironmentStrings. Updating environment strings
-Action start 06:01:06: RemoveEnvironmentStrings.
-Action ended 06:01:06: RemoveEnvironmentStrings. Return value 0.
-Action 06:01:06: RemoveDuplicateFiles. Removing duplicated files
-Action start 06:01:06: RemoveDuplicateFiles.
-Action ended 06:01:06: RemoveDuplicateFiles. Return value 0.
-Action 06:01:06: RemoveFiles. Removing files
-Action start 06:01:06: RemoveFiles.
+Action 17:43:59: ProcessComponents. Updating component registration
+Action start 17:43:59: ProcessComponents.
+Action ended 17:43:59: ProcessComponents. Return value 0.
+Action 17:43:59: UnpublishComponents. Unpublishing Qualified Components
+Action start 17:43:59: UnpublishComponents.
+Action ended 17:43:59: UnpublishComponents. Return value 0.
+Action 17:43:59: MsiUnpublishAssemblies. Unpublishing assembly information
+Action start 17:43:59: MsiUnpublishAssemblies.
+Action ended 17:43:59: MsiUnpublishAssemblies. Return value 0.
+Action 17:43:59: UnpublishFeatures. Unpublishing Product Features
+Action start 17:43:59: UnpublishFeatures.
+Action ended 17:43:59: UnpublishFeatures. Return value 0.
+Action 17:43:59: StopServices. Stopping services
+Action start 17:43:59: StopServices.
+Action ended 17:43:59: StopServices. Return value 0.
+Action 17:43:59: DeleteServices. Deleting services
+Action start 17:43:59: DeleteServices.
+Action ended 17:43:59: DeleteServices. Return value 0.
+Action 17:43:59: UnregisterComPlus. Unregistering COM+ Applications and Components
+Action start 17:43:59: UnregisterComPlus.
+Action ended 17:43:59: UnregisterComPlus. Return value 0.
+Action 17:43:59: SelfUnregModules. Unregistering modules
+Action start 17:43:59: SelfUnregModules.
+Action ended 17:43:59: SelfUnregModules. Return value 0.
+Action 17:43:59: UnregisterTypeLibraries. Unregistering type libraries
+Action start 17:43:59: UnregisterTypeLibraries.
+Action ended 17:43:59: UnregisterTypeLibraries. Return value 0.
+Action 17:43:59: RemoveODBC. Removing ODBC components
+Action start 17:43:59: RemoveODBC.
+Action ended 17:43:59: RemoveODBC. Return value 0.
+Action 17:43:59: UnregisterFonts. Unregistering fonts
+Action start 17:43:59: UnregisterFonts.
+Action ended 17:43:59: UnregisterFonts. Return value 0.
+Action 17:43:59: RemoveRegistryValues. Removing system registry values
+Action start 17:43:59: RemoveRegistryValues.
+Action ended 17:43:59: RemoveRegistryValues. Return value 0.
+Action 17:43:59: UnregisterClassInfo. Unregister Class servers
+Action start 17:43:59: UnregisterClassInfo.
+Action ended 17:43:59: UnregisterClassInfo. Return value 0.
+Action 17:43:59: UnregisterExtensionInfo. Unregistering extension servers
+Action start 17:43:59: UnregisterExtensionInfo.
+Action ended 17:43:59: UnregisterExtensionInfo. Return value 0.
+Action 17:43:59: UnregisterProgIdInfo. Unregistering program identifiers
+Action start 17:43:59: UnregisterProgIdInfo.
+Action ended 17:43:59: UnregisterProgIdInfo. Return value 0.
+Action 17:43:59: UnregisterMIMEInfo. Unregistering MIME info
+Action start 17:43:59: UnregisterMIMEInfo.
+Action ended 17:43:59: UnregisterMIMEInfo. Return value 0.
+Action 17:43:59: RemoveIniValues. Removing INI files entries
+Action start 17:43:59: RemoveIniValues.
+Action ended 17:43:59: RemoveIniValues. Return value 0.
+Action 17:43:59: RemoveShortcuts. Removing shortcuts
+Action start 17:43:59: RemoveShortcuts.
+Action ended 17:43:59: RemoveShortcuts. Return value 0.
+Action 17:43:59: RemoveEnvironmentStrings. Updating environment strings
+Action start 17:43:59: RemoveEnvironmentStrings.
+Action ended 17:43:59: RemoveEnvironmentStrings. Return value 0.
+Action 17:43:59: RemoveDuplicateFiles. Removing duplicated files
+Action start 17:43:59: RemoveDuplicateFiles.
+Action ended 17:43:59: RemoveDuplicateFiles. Return value 0.
+Action 17:43:59: RemoveFiles. Removing files
+Action start 17:43:59: RemoveFiles.
 File: w9xpopen.exe, Directory: TARGETDIR
 File: README.txt, Directory: TARGETDIR
 File: NEWS.txt, Directory: TARGETDIR
@@ -3490,18 +3362,18 @@ File: 9.0.30729.1.cat, Directory: policydir.30729.01.policy_9_0_Microsoft_VC90_C
 File: 9.0.30729.1.policy, Directory: policydir.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584
 File: 9.0.30729.1.cat, Directory: payload_ul.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584
 File: 9.0.30729.1.policy, Directory: payload_ul.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584
-Action ended 06:01:06: RemoveFiles. Return value 0.
-Action 06:01:06: RemoveFolders. Removing folders
-Action start 06:01:06: RemoveFolders.
-Action ended 06:01:06: RemoveFolders. Return value 0.
-Action 06:01:06: CreateFolders. Creating folders
-Action start 06:01:06: CreateFolders.
-Action ended 06:01:06: CreateFolders. Return value 0.
-Action 06:01:06: MoveFiles. Moving files
-Action start 06:01:06: MoveFiles.
-Action ended 06:01:06: MoveFiles. Return value 0.
-Action 06:01:06: InstallFiles. Copying new files
-Action start 06:01:06: InstallFiles.
+Action ended 17:43:59: RemoveFiles. Return value 0.
+Action 17:43:59: RemoveFolders. Removing folders
+Action start 17:43:59: RemoveFolders.
+Action ended 17:43:59: RemoveFolders. Return value 0.
+Action 17:43:59: CreateFolders. Creating folders
+Action start 17:43:59: CreateFolders.
+Action ended 17:43:59: CreateFolders. Return value 0.
+Action 17:43:59: MoveFiles. Moving files
+Action start 17:43:59: MoveFiles.
+Action ended 17:43:59: MoveFiles. Return value 0.
+Action 17:43:59: InstallFiles. Copying new files
+Action start 17:43:59: InstallFiles.
 File: w9xpopen.exe,  Directory: TARGETDIR,  Size: 111104
 File: README.txt,  Directory: TARGETDIR,  Size: 56938
 File: NEWS.txt,  Directory: TARGETDIR,  Size: 474595
@@ -6716,119 +6588,108 @@ File: 9.0.30729.1.cat,  Directory: policydir.30729.01.policy_9_0_Microsoft_VC90_
 File: 9.0.30729.1.policy,  Directory: policydir.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584,  Size: 752
 File: 9.0.30729.1.cat,  Directory: payload_ul.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584,  Size: 10785
 File: 9.0.30729.1.policy,  Directory: payload_ul.30729.01.policy_9_0_Microsoft_VC90_CRT_x86.SP.644DE414_7746_31B5_908B_E938B4078584,  Size: 752
-Action ended 06:01:09: InstallFiles. Return value 0.
-
-
-
-
-Action 06:01:17: PatchFiles. Patching files
-Action start 06:01:17: PatchFiles.
-Action ended 06:01:17: PatchFiles. Return value 0.
-Action 06:01:17: DuplicateFiles. Creating duplicate files
-Action start 06:01:17: DuplicateFiles.
-Action ended 06:01:17: DuplicateFiles. Return value 0.
-Action 06:01:17: BindImage. Binding executables
-Action start 06:01:17: BindImage.
-Action ended 06:01:17: BindImage. Return value 0.
-Action 06:01:17: CreateShortcuts. Creating shortcuts
-Action start 06:01:17: CreateShortcuts.
+Action ended 17:44:05: InstallFiles. Return value 0.
+Action 17:44:05: PatchFiles. Patching files
+Action start 17:44:05: PatchFiles.
+Action ended 17:44:05: PatchFiles. Return value 0.
+Action 17:44:05: DuplicateFiles. Creating duplicate files
+Action start 17:44:05: DuplicateFiles.
+Action ended 17:44:05: DuplicateFiles. Return value 0.
+Action 17:44:05: BindImage. Binding executables
+Action start 17:44:05: BindImage.
+Action ended 17:44:05: BindImage. Return value 0.
+Action 17:44:05: CreateShortcuts. Creating shortcuts
+Action start 17:44:05: CreateShortcuts.
 Shortcut: Python
 Shortcut: IDLE
 Shortcut: PyDoc
 Shortcut: Manual
 Shortcut: Uninstall
-Action ended 06:01:17: CreateShortcuts. Return value 0.
-Action 06:01:17: RegisterClassInfo. Registering Class servers
-Action start 06:01:17: RegisterClassInfo.
-Action ended 06:01:17: RegisterClassInfo. Return value 0.
-Action 06:01:17: RegisterExtensionInfo. Registering extension servers
-Action start 06:01:17: RegisterExtensionInfo.
-Action ended 06:01:17: RegisterExtensionInfo. Return value 0.
-Action 06:01:17: RegisterProgIdInfo. Registering program identifiers
-Action start 06:01:17: RegisterProgIdInfo.
-Action ended 06:01:17: RegisterProgIdInfo. Return value 0.
-Action 06:01:17: RegisterMIMEInfo. Registering MIME info
-Action start 06:01:17: RegisterMIMEInfo.
-Action ended 06:01:17: RegisterMIMEInfo. Return value 0.
-Action 06:01:17: WriteRegistryValues. Writing system registry values
-Action start 06:01:17: WriteRegistryValues.
-Key: HKEY_LOCAL_MACHINE\Software\Python\PythonCore\2.7\Help\Main Python Documentation, Name: , Value: C:\Python27\Doc\python2713.chm
-Key: HKEY_LOCAL_MACHINE\Software\Python\PythonCore\2.7\InstallPath, Name: , Value: C:\Python27\
-Key: HKEY_LOCAL_MACHINE\Software\Classes\.py, Name: , Value: Python.File
-Key: HKEY_LOCAL_MACHINE\Software\Classes\.pyw, Name: , Value: Python.NoConFile
-Key: HKEY_LOCAL_MACHINE\Software\Classes\.pyc, Name: , Value: Python.CompiledFile
-Key: HKEY_LOCAL_MACHINE\Software\Classes\.pyo, Name: , Value: Python.CompiledFile
-Key: HKEY_LOCAL_MACHINE\Software\Classes\.py, Name: Content Type, Value: text/plain
-Key: HKEY_LOCAL_MACHINE\Software\Classes\.pyw, Name: Content Type, Value: text/plain
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.File\shell\open\command, Name: , Value: "C:\Python27\python.exe" "%1" %*
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.NoConFile\shell\open\command, Name: , Value: "C:\Python27\pythonw.exe" "%1" %*
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.CompiledFile\shell\open\command, Name: , Value: "C:\Python27\python.exe" "%1" %*
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.File\DefaultIcon, Name: , Value: C:\Python27\DLLs\py.ico
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.NoConFile\DefaultIcon, Name: , Value: C:\Python27\DLLs\py.ico
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.CompiledFile\DefaultIcon, Name: , Value: C:\Python27\DLLs\pyc.ico
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.File, Name: , Value: Python File
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.NoConFile, Name: , Value: Python File (no console)
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.CompiledFile, Name: , Value: Compiled Python File
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.File\shellex\DropHandler, Name: , Value: {60254CA5-953B-11CF-8C96-00AA00B8708C}
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.NoConFile\shellex\DropHandler, Name: , Value: {60254CA5-953B-11CF-8C96-00AA00B8708C}
-Key: HKEY_LOCAL_MACHINE\Software\Classes\Python.CompiledFile\shellex\DropHandler, Name: , Value: {60254CA5-953B-11CF-8C96-00AA00B8708C}
-Key: HKEY_LOCAL_MACHINE\Software\Python\PythonCore\2.7\InstallPath\InstallGroup, Name: , Value: Python 2.7
-Key: HKEY_LOCAL_MACHINE\Software\Python\PythonCore\2.7\PythonPath, Name: , Value: C:\Python27\Lib;C:\Python27\DLLs;C:\Python27\Lib\lib-tk
-Key: HKEY_LOCAL_MACHINE\Software\Python\PythonCore\2.7\Modules, Name: +, Value: 
-Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\Python.exe, Name: , Value: C:\Python27\Python.exe
-Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{4A656C6C-D24A-473F-9747-3A8D00907A03}, Name: DisplayIcon, Value: C:\Python27\python.exe
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Installations\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.1_x-ww_6f74963e\downlevel_payload.9.0.30729.1, Name: , Value: 
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Installations\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.1_x-ww_6f74963e\downlevel_manifest.9.0.30729.1, Name: , Value: 
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Installations\x86_policy.9.0.Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.1_x-ww_976e9984\downlevel_manifest.9.0.30729.1, Name: , Value: 
-Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SideBySide\PatchedComponents, Name: {BF95E909-73F5-3378-BA9E-5AA63B70230F}, Value: 
-Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SideBySide\PatchedComponents, Name: {0679E22E-6B33-3458-B7E6-877AC9585626}, Value: 
-Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SideBySide\PatchedComponents, Name: {4438C47F-9FE3-3D40-A49F-DEFB174F7826}, Value: 
-Action ended 06:01:17: WriteRegistryValues. Return value 0.
-Action 06:01:17: WriteIniValues. Writing INI files values
-Action start 06:01:17: WriteIniValues.
-Action ended 06:01:17: WriteIniValues. Return value 0.
-Action 06:01:17: WriteEnvironmentStrings. Updating environment strings
-Action start 06:01:17: WriteEnvironmentStrings.
-Name: Path, Value: C:\Python27\;C:\Python27\Scripts;C:\windows\system32;C:\windows;C:\windows\system32\wbem, Action -2147483647
-Action ended 06:01:17: WriteEnvironmentStrings. Return value 0.
-Action 06:01:17: RegisterFonts. Registering fonts
-Action start 06:01:17: RegisterFonts.
-Action ended 06:01:17: RegisterFonts. Return value 0.
-Action 06:01:17: InstallODBC. Installing ODBC components
-Action start 06:01:17: InstallODBC.
-Action ended 06:01:17: InstallODBC. Return value 0.
-Action 06:01:17: RegisterTypeLibraries. Registering type libraries
-Action start 06:01:17: RegisterTypeLibraries.
-Action ended 06:01:17: RegisterTypeLibraries. Return value 0.
-Action 06:01:17: SelfRegModules. Registering modules
-Action start 06:01:17: SelfRegModules.
-Action ended 06:01:17: SelfRegModules. Return value 0.
-Action 06:01:17: RegisterComPlus. Registering COM+ Applications and Components
-Action start 06:01:17: RegisterComPlus.
-Action ended 06:01:17: RegisterComPlus. Return value 0.
-Action 06:01:17: InstallServices. Installing new services
-Action start 06:01:17: InstallServices.
-Action ended 06:01:17: InstallServices. Return value 0.
-Action 06:01:17: StartServices. Starting services
-Action start 06:01:17: StartServices.
-Action ended 06:01:17: StartServices. Return value 0.
-Action 06:01:17: RegisterUser. Registering user
-Action start 06:01:17: RegisterUser.
+Action ended 17:44:05: CreateShortcuts. Return value 0.
+Action 17:44:05: RegisterClassInfo. Registering Class servers
+Action start 17:44:05: RegisterClassInfo.
+Action ended 17:44:05: RegisterClassInfo. Return value 0.
+Action 17:44:05: RegisterExtensionInfo. Registering extension servers
+Action start 17:44:05: RegisterExtensionInfo.
+Action ended 17:44:05: RegisterExtensionInfo. Return value 0.
+Action 17:44:05: RegisterProgIdInfo. Registering program identifiers
+Action start 17:44:05: RegisterProgIdInfo.
+Action ended 17:44:05: RegisterProgIdInfo. Return value 0.
+Action 17:44:05: RegisterMIMEInfo. Registering MIME info
+Action start 17:44:05: RegisterMIMEInfo.
+Action ended 17:44:05: RegisterMIMEInfo. Return value 0.
+Action 17:44:05: WriteRegistryValues. Writing system registry values
+Action start 17:44:05: WriteRegistryValues.
+Key: HKEY_CURRENT_USER\Software\Python\PythonCore\2.7\Help\Main Python Documentation, Name: , Value: C:\Python27\Doc\python2713.chm
+Key: HKEY_CURRENT_USER\Software\Python\PythonCore\2.7\InstallPath, Name: , Value: C:\Python27\
+Key: HKEY_CURRENT_USER\Software\Classes\.py, Name: , Value: Python.File
+Key: HKEY_CURRENT_USER\Software\Classes\.pyw, Name: , Value: Python.NoConFile
+Key: HKEY_CURRENT_USER\Software\Classes\.pyc, Name: , Value: Python.CompiledFile
+Key: HKEY_CURRENT_USER\Software\Classes\.pyo, Name: , Value: Python.CompiledFile
+Key: HKEY_CURRENT_USER\Software\Classes\.py, Name: Content Type, Value: text/plain
+Key: HKEY_CURRENT_USER\Software\Classes\.pyw, Name: Content Type, Value: text/plain
+Key: HKEY_CURRENT_USER\Software\Classes\Python.File\shell\open\command, Name: , Value: "C:\Python27\python.exe" "%1" %*
+Key: HKEY_CURRENT_USER\Software\Classes\Python.NoConFile\shell\open\command, Name: , Value: "C:\Python27\pythonw.exe" "%1" %*
+Key: HKEY_CURRENT_USER\Software\Classes\Python.CompiledFile\shell\open\command, Name: , Value: "C:\Python27\python.exe" "%1" %*
+Key: HKEY_CURRENT_USER\Software\Classes\Python.File\DefaultIcon, Name: , Value: C:\Python27\DLLs\py.ico
+Key: HKEY_CURRENT_USER\Software\Classes\Python.NoConFile\DefaultIcon, Name: , Value: C:\Python27\DLLs\py.ico
+Key: HKEY_CURRENT_USER\Software\Classes\Python.CompiledFile\DefaultIcon, Name: , Value: C:\Python27\DLLs\pyc.ico
+Key: HKEY_CURRENT_USER\Software\Classes\Python.File, Name: , Value: Python File
+Key: HKEY_CURRENT_USER\Software\Classes\Python.NoConFile, Name: , Value: Python File (no console)
+Key: HKEY_CURRENT_USER\Software\Classes\Python.CompiledFile, Name: , Value: Compiled Python File
+Key: HKEY_CURRENT_USER\Software\Classes\Python.File\shellex\DropHandler, Name: , Value: {60254CA5-953B-11CF-8C96-00AA00B8708C}
+Key: HKEY_CURRENT_USER\Software\Classes\Python.NoConFile\shellex\DropHandler, Name: , Value: {60254CA5-953B-11CF-8C96-00AA00B8708C}
+Key: HKEY_CURRENT_USER\Software\Classes\Python.CompiledFile\shellex\DropHandler, Name: , Value: {60254CA5-953B-11CF-8C96-00AA00B8708C}
+Key: HKEY_CURRENT_USER\Software\Python\PythonCore\2.7\InstallPath\InstallGroup, Name: , Value: Python 2.7
+Key: HKEY_CURRENT_USER\Software\Python\PythonCore\2.7\PythonPath, Name: , Value: C:\Python27\Lib;C:\Python27\DLLs;C:\Python27\Lib\lib-tk
+Key: HKEY_CURRENT_USER\Software\Python\PythonCore\2.7\Modules, Name: +, Value: 
+Key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\Python.exe, Name: , Value: C:\Python27\Python.exe
+Key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{4A656C6C-D24A-473F-9747-3A8D00907A03}, Name: DisplayIcon, Value: C:\Python27\python.exe
+Action ended 17:44:05: WriteRegistryValues. Return value 0.
+Action 17:44:05: WriteIniValues. Writing INI files values
+Action start 17:44:05: WriteIniValues.
+Action ended 17:44:05: WriteIniValues. Return value 0.
+Action 17:44:05: WriteEnvironmentStrings. Updating environment strings
+Action start 17:44:05: WriteEnvironmentStrings.
+Name: Path, Value: C:\Python27\;C:\Python27\Scripts;C:\Python27\;C:\Python27\Scripts;C:\windows\system32;C:\windows;C:\windows\system32\wbem, Action -2147483647
+Action ended 17:44:05: WriteEnvironmentStrings. Return value 0.
+Action 17:44:05: RegisterFonts. Registering fonts
+Action start 17:44:05: RegisterFonts.
+Action ended 17:44:05: RegisterFonts. Return value 0.
+Action 17:44:05: InstallODBC. Installing ODBC components
+Action start 17:44:05: InstallODBC.
+Action ended 17:44:05: InstallODBC. Return value 0.
+Action 17:44:05: RegisterTypeLibraries. Registering type libraries
+Action start 17:44:05: RegisterTypeLibraries.
+Action ended 17:44:05: RegisterTypeLibraries. Return value 0.
+Action 17:44:05: SelfRegModules. Registering modules
+Action start 17:44:05: SelfRegModules.
+Action ended 17:44:05: SelfRegModules. Return value 0.
+Action 17:44:05: RegisterComPlus. Registering COM+ Applications and Components
+Action start 17:44:05: RegisterComPlus.
+Action ended 17:44:05: RegisterComPlus. Return value 0.
+Action 17:44:05: InstallServices. Installing new services
+Action start 17:44:05: InstallServices.
+Action ended 17:44:05: InstallServices. Return value 0.
+Action 17:44:05: StartServices. Starting services
+Action start 17:44:05: StartServices.
+Action ended 17:44:05: StartServices. Return value 0.
+Action 17:44:05: RegisterUser. Registering user
+Action start 17:44:05: RegisterUser.
 
-Action ended 06:01:17: RegisterUser. Return value 0.
-Action 06:01:17: RegisterProduct. Registering product
-Action start 06:01:17: RegisterProduct.
+Action ended 17:44:05: RegisterUser. Return value 0.
+Action 17:44:05: RegisterProduct. Registering product
+Action start 17:44:05: RegisterProduct.
 {4A656C6C-D24A-473F-9747-3A8D00907A03}
-Action ended 06:01:17: RegisterProduct. Return value 0.
-Action 06:01:17: PublishComponents. Publishing Qualified Components
-Action start 06:01:17: PublishComponents.
-Action ended 06:01:17: PublishComponents. Return value 0.
-Action 06:01:17: MsiPublishAssemblies. Publishing assembly information
-Action start 06:01:17: MsiPublishAssemblies.
-Action ended 06:01:17: MsiPublishAssemblies. Return value 0.
-Action 06:01:17: PublishFeatures. Publishing Product Features
-Action start 06:01:17: PublishFeatures.
-Feature: SharedCRT
+Action ended 17:44:05: RegisterProduct. Return value 0.
+Action 17:44:05: PublishComponents. Publishing Qualified Components
+Action start 17:44:05: PublishComponents.
+Action ended 17:44:05: PublishComponents. Return value 0.
+Action 17:44:05: MsiPublishAssemblies. Publishing assembly information
+Action start 17:44:05: MsiPublishAssemblies.
+Action ended 17:44:05: MsiPublishAssemblies. Return value 0.
+Action 17:44:05: PublishFeatures. Publishing Product Features
+Action start 17:44:05: PublishFeatures.
 Feature: DefaultFeature
 Feature: Extensions
 Feature: TclTk
@@ -6837,10 +6698,10 @@ Feature: Tools
 Feature: pip_feature
 Feature: Testsuite
 Feature: PrependPath
-Action ended 06:01:17: PublishFeatures. Return value 0.
-Action 06:01:17: PublishProduct. Publishing product information
-Action start 06:01:17: PublishProduct.
-Action ended 06:01:17: PublishProduct. Return value 0.
-Action start 06:01:17: InstallFinalize.
-Action ended 06:01:17: InstallFinalize. Return value 0.
-Action ended 06:01:17: ExecuteAction. Return value 0.
+Action ended 17:44:05: PublishFeatures. Return value 0.
+Action 17:44:05: PublishProduct. Publishing product information
+Action start 17:44:05: PublishProduct.
+Action ended 17:44:05: PublishProduct. Return value 0.
+Action start 17:44:05: InstallFinalize.
+Action ended 17:44:05: InstallFinalize. Return value 0.
+Action ended 17:44:05: ExecuteAction. Return value 0.

