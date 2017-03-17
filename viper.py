@@ -5,7 +5,8 @@ import os
 import sys
 import readline
 import modules.handler.ViperServer as viperserver
-
+import commands
+import platform
 
 
 sys.dont_write_bytecode = True
@@ -51,12 +52,20 @@ def menu():
 def console():
 	while(True):
 		command = raw_input('$ Viper>> ')
-		command = command.split(" ") 
-
+		#command = command.split(" ") 
+		
 		if 'ls' in command:
 			dirlist = os.listdir(".")
 			print(dirlist)
-		
+			
+		elif 'cd' in command:
+			#code,directory = command.split(" ")
+			# # split up the received command based on space into two variables
+			code, command = command.split(" ") 
+			os.chdir(command)
+			print ("[+] CWD Is " + os.getcwd())
+			continue
+
 		if 'dir' in command:
 			dirlist = os.listdir(".")
 			print(dirlist)

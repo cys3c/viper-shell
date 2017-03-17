@@ -2,12 +2,12 @@
 Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar).
 //=> Copyright (c) 2017 jinverar
 
-VIPER FRAMEWORK
+VIPER
 
 """
-1. This is python framework designed to control remote agents that get deployed on computers in defense of exploitation frameworks!
-2. The framework is designed in order to detect compromised files, processes, and services in order to grab or kill the malware. 
-3. This framework can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions.
+This is viper and designed to control remote clients that get deployed on computers in defense of exploitation frameworks!
+The viper is designed in order to retrieve compromised files, processes, and services in case you have to reach out and grab information. 
+the viper can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions.
 
 This program was created as a basic function to reach out and grab things fast! Powered by python. 
 
