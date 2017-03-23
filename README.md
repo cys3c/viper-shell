@@ -16,7 +16,13 @@ Requirements
 
 viper has been tested on kali 2.0
 
-python 2.7
+The installer.sh will do this for you
+
+python-twisted +16.6;
+PyCrypto;
+pyOpenSSl;
+Zope interface;
+python 2.7;
 python-2.7.13.msi;
 pyinstaller-3.1.1;
 future-0.16.0;

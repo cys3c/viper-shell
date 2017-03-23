@@ -30,6 +30,19 @@ read -n 1 -s -p "Press any key to continue"
 
 sudo apt-get update
 
+echo "Viper will install twisted +17 python, zope.interface, pycrypto"
+
+apt-get install python-twisted
+pip install pycrypto
+pip install zope.interface
+pip install --upgrade twisted
+
+echo "we will have to modify the bashrc. add the command between brackets to bashrc (export PYTHONPATH="") then restart bashrc. don't worry we can do it for you"
+#reminder to uncomment this when you prove it correct
+#echo "export PYTHONPATH=""" > ~/.bashrc
+#source ~/.bashrc
+
+
 echo "building cross compiler to compile exec files on Linux for windows....."
 sudo apt-get install wine winetricks
 #winetricks python
