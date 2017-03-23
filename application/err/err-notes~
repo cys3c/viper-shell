@@ -1,0 +1,5 @@
+
+
+#err notes detect twistd running correctly
+
+make sure twistd isn't running using ps:  ps aux | grep twistd

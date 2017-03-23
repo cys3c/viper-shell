@@ -1,0 +1,12 @@
+
+
+#err notes detect twistd running correctly
+
+make sure twistd isn't running using ps:  ps aux | grep twistd
+
+start up the app in non-daemon mode, send its output to the console and to
+a file:
+
+*twistd -noy my-app.tac | tee server.log &
+*poll the server.log by grep'ing for a string I print from my app when the app is completely started
+*launch the tests against the running server
