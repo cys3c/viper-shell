@@ -7,7 +7,7 @@ echo "setting permissions......"
 chmod +x viper.py
 chmod +x modules/handler/ViperServer.py
 echo ""
-echo "permissions set now read this first"
+echo "permissions set now read this first *Important this is in development. Please take a snapshot before install"
 echo ""
 echo "This is the install for Viper Framework and before you run this script make sure that you navigate 
 to payloads/ViperClient.py and change the IPADDESS and PORT number that you want client to call back to. 
@@ -44,9 +44,10 @@ pip install --upgrade twisted
 #cd Twisted-17.1.0
 #pythin setup.py install
 echo "we will have to modify the bashrc. add the command between brackets to bashrc (export PYTHONPATH="") then restart bashrc. don't worry we can do it for you"
-#reminder to uncomment this when you prove it correct
-#echo "export PYTHONPATH=""" > ~/.bashrc
-#source ~/.bashrc
+echo 'export PYTHONPATH=""' >> ~/.bashrc
+source ~/.bashrc
+
+echo "bashrc config completed"
 
 
 echo "building cross compiler to compile exec files on Linux for windows....."
