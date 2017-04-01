@@ -13,10 +13,6 @@ import platform
 
 sys.dont_write_bytecode = True
 
-
-
-
-
 """
 1. This is python framework designed to control agents that get deployed on computers in defense of exploitation frameworks!
 2. The framework is designed in order to detect compromised files, processes, and services in order to grab or kill the malware. 
@@ -24,7 +20,6 @@ sys.dont_write_bytecode = True
 
 
 """
-
 
 def banner():
     print """
@@ -92,7 +87,7 @@ class CONSOLEFactory(Factory):
             print ( "[+] Starting server standby " + viperserver.main())
         
         elif 'client2exe' in command:
-            #subprocess.call("payloads/Client2exe.sh", stdin=None, stdout=None, stderr=None, shell=True)
+            #subprocess.call("../payloads/Client2exe.sh", stdin=None, stdout=None, stderr=None, shell=True)
             subprocess.call("payloads/Client2exe.sh 2>/dev/null", shell=True)
             print ( "[+] created the exe inside the payloads folder. Reminder you still may have a payload in /var/www/html")
             pass
