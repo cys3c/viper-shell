@@ -24,8 +24,18 @@ def stack():
     d.callback(0)    
 
 
+#if len(sys.argv) != 4:
+#    print "Usage: ./start-teamserver.sh <teamserver ip> <teamserver port> <password *todo>"
+#    exit(0)
 
-port = 8007
+#ip = str(sys.argv[1])
+#port = int(sys.argv[2])
+#myport = int(sys.argv[3])
+
+#teamserver = Server()
+#teamserverdev.listen(myport)
+
+
 factory = teamserverdev.CONSOLEFactory()
 application = service.Application("factory")
 CONSOLEService = pollreactor.TCPServer(port, factory)
