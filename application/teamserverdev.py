@@ -108,6 +108,8 @@ class CONSOLEFactory(Factory):
         else:
             print('')
 
+def startListening(8888)
+
 
 #from twisted.internet import reactor
 #reactor.callWhenRunning(stack)

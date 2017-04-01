@@ -14,25 +14,28 @@ from twisted.python import log
 from twisted.internet.defer import Deferred as D
 import traceback
 
-def stack():
-    print 'The python stack:'
-    traceback.print_stack()
-    err.printTraceback()
-    d = D()
-    d.addCallback(start_app)
-    d.addErrback(command_die)
-    d.callback(0)    
+#def stack():
+#    print 'The python stack:'
+#    traceback.print_stack()
+#    err.printTraceback()
+#    d = D()
+#    d.addCallback(start_app)
+#    d.addErrback(command_die)
+#    d.callback(0)    
 
 
 
-port = 8007
-factory = teamserverdev.CONSOLEFactory()
-application = service.Application("factory")
-CONSOLEService = pollreactor.TCPServer(port, factory)
+
+#teamserver = Server()
+#teamserverdev.listen(myport)
+application = CONSOLEFactory()
+CONSOLEService = pollreactor.TCPServer(port, ip)
 CONSOLEService.setServiceParent(application)
 pollreactor.callWhenRunning(application)
+reactor.listenTCP(port,ip)
 pollreactor.run(stack)
 pollreactor.run()
+application = service.Application(CONSOLEFactory)
 
 #from twisted.internet import reactor
 #pollreactor.CONSOLEFactory() 
@@ -45,3 +48,4 @@ pollreactor.run()
 #endpoint.listen(CONSOLEFactory())
 #print 'Starting the teamserver reactor.' 
 #pollreactor.run(stack)
+
