@@ -6,6 +6,7 @@ from twisted.internet.endpoints import TCP4ServerEndpoint
 from twisted.internet import pollreactor
 #pollreactor.install() #installs the poll reactor work with larger numbers of connected sockets, it may provide for better performance than the SelectReactor
 from twisted.python import log
+from services.chatserver import ChatFactory
 import subprocess
 import os
 import sys
@@ -53,72 +54,22 @@ class Viper(protocol.Protocol):
     def __init__(self, factory):
         self.factory = factory
 
-    def connectionMade(self):
-        self.factory.numProtocols = self.factory.numProtocols+1
-        self.transport.write( "Welcome! There are currently %d open connections.\n" %(self.factory.numProtocols,))
-
-    def connectionLost(self, reason):
-        self.factory.numProtocols = self.factory.numProtocols-1       
-        
-    
-    def dataReceived(self, data):
-        self.transport.write(data)
 
 
 class CONSOLEFactory(Factory):
     def buildProtocol(self, addr):
-        banner()
-        while(True):
-            command = raw_input('$ Viper]}>> ')
-            if "help" in command:
-                for x in command:
-                    x = "help"
-                    print("[+] here is the help ")
-                    menu()
-                    break    
-            elif 'ls' in command:
-                dirlist = os.listdir(".")
-                print(dirlist)
+        def connectionMade(self):
+            self.factory.numProtocols = self.factory.numProtocols+1
+            self.transport.write( "Welcome! There are currently %d open connections.\n" %(self.factory.numProtocols,))
 
-            elif 'cd' in command:
-                for x in command:
-                    if 'cd*' in x:
-                        code, command = command.split("*")
-                        os.chdir(command)
-                        print ("[+] CWD Is " + os.getcwd())
-                    elif 'cd' in command:
-                        code, command = command.split(" ")
-                        os.chdir(command)
-                        print ("[+] CWD Is " + os.getcwd())
-            
-            elif 'dir' in command:
-                dirlist = os.listdir(".")
-                print(dirlist)
+        def connectionLost(self, reason):
+            self.factory.numProtocols = self.factory.numProtocols-1       
         
-            elif 'handler' in command:
-                print ( "[+] Starting server standby " + viperserver.main())
-        
-            elif 'client2exe' in command:
-                #subprocess.call("../payloads/Client2exe.sh", stdin=None, stdout=None, stderr=None, shell=True)
-                subprocess.call("payloads/Client2exe.sh 2>/dev/null", shell=True)
-                print ( "[+] created the exe inside the payloads folder. Reminder you still may have a payload in /var/www/html")
-                pass
-                #banner()           
-                #menu()
-            
-            elif 'chatserver' in command:
-                os.system("twistd -ny services/chatserver.py  --pidfile services/chatserver.pid &")
-                print ( "[+] chatserver reactor started")
-                print ( "[+] created the chatserver please connect to server as host @ telnet 127.0.0.1 8123 username host")
-                print ( "[*] remember for now you will have to manually kill the chat server type (stopchat) for commands to stop chat ")
-                pass 
-               
-            elif 'stopchat' in command:
-                print ( "[+] for now you will have to manually stop chatserver with the usual methods")
-                print ( "[+] type in terminal ps aux | grep chatserver and then kill -9 pid")
-                pass     
-            else:
-                print('')
+    
+        def dataReceived(self, data):
+            self.transport.write(data)
+
+
 
 
 port = 8007
@@ -128,6 +79,7 @@ application = service.Application(CONSOLEFactory)
 #reactor.listenTCP(port,V)
 endpoint = TCP4ServerEndpoint(reactor, port)
 endpoint.listen(CONSOLEFactory())
+endpoint.listen(ChatFactory())
 reactor.run()
 
 #pollreactor.run(stack)

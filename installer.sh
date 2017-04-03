@@ -24,18 +24,25 @@ echo ""
 echo ""
 echo "Viper will autostart and your should scroll through the install to see what is happening"
 echo ""
-echo ""
+echo "This may take a little while so it's a good time for a coffee :-)"
 
 read -n 1 -s -p "Press any key to continue"
 
 sudo apt-get update
 
-echo "Viper will install twisted +17 python, zope.interface, pycrypto"
-
-apt-get install python-twisted
-pip install pycrypto
+echo "Viper will install twisted +17 python, zope.interface, pycrypto & more"
+echo "Viper will install python setuptools, software properties, and depends"
+apt-get install python-setuptools -y
+apt-get install python-software-properties -y
+apt-get install build-essential libssl-dev libffi-dev python-dev -y
+apt-get install python-dev -y
+apt-get install python-pip -y
+apt-get install python-twisted -y
 pip install zope.interface
 pip install --upgrade twisted
+pip install service_identity
+pip install pycrypto
+pip install cryptography
 
 #location of twisted source ver 17.1.0 if needed
 #wget https://twistedmatrix.com/Releases/Twisted/17.1/Twisted-17.1.0.tar.bz2
@@ -44,11 +51,21 @@ pip install --upgrade twisted
 #cd Twisted-17.1.0
 #pythin setup.py install
 echo "we will have to modify the bashrc. add the command between brackets to bashrc (export PYTHONPATH="") then restart bashrc. don't worry we can do it for you"
-echo 'export PYTHONPATH=""' >> ~/.bashrc
+echo "We will have to backup bashrc first"
+
+cp ~/.bashrc bashrc.bak
+
+export PYTHONPATH="" >> ~/.bashrc
+
 source ~/.bashrc
 
 echo "bashrc config completed"
+echo "Please go back and check the bash rc file, pythonpath="" should be appended to end of file"
+echo "If you have an issue with the bash rc file we have a command to reinstall"
 
+#echo "sudo apt-get -o Dpkg::Options::="--force-confmiss" install --reinstall bash"
+#new bash should be in /etc/skel/
+#copy new bashrc file to ~/bashrc and append pythonpath to the end
 
 echo "building cross compiler to compile exec files on Linux for windows....."
 sudo apt-get install wine winetricks

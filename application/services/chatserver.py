@@ -4,6 +4,10 @@ from twisted.internet.protocol import Factory
 from twisted.protocols.basic import LineReceiver
 from twisted.internet import reactor
 
+from twisted.application.service import Application, IServiceCollection
+from twisted.conch.manhole_tap   import makeService
+
+
 class Chat(LineReceiver):
 
     def __init__(self, users):

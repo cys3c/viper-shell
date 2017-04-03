@@ -67,7 +67,7 @@ class Viper(protocol.Protocol):
 
 class CONSOLEFactory(Factory):
     def buildProtocol(self, addr):
-        banner()
+        banner()    
         while(True):
             command = raw_input('$ Viper]}>> ')
             if "help" in command:
@@ -120,7 +120,7 @@ class CONSOLEFactory(Factory):
             else:
                 print('')
 
-V = CONSOLEFactory(Factory)
+
 port = 8007
 application = service.Application(CONSOLEFactory)
 #CONSOLEService = pollreactor.listenTCP(port, factory)

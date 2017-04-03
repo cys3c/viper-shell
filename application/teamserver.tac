@@ -1,27 +1,32 @@
 #!/usr/bin/python
 # Copyright (c) 2017 Joseph Inverarity <jinverar@gmail.com>
 
-# See the COPYRIGHT file for more information
-
 import os
 from twisted.application import service
 from twisted.internet import pollreactor
 pollreactor.install() #installs the poll reactor work with larger numbers of connected sockets, it may provide for better performance than the SelectReactor
 from twisted.internet.protocol import Factory
-from teamserverdev import CONSOLEFactory
+
+#import the teamserver console factory class
+#from teamserverdev import CONSOLEFactory
+
+#import the development protocol and factory
+
+from experiment.py import viper, CONSOLEFactory
+
 from twisted.internet import protocol, reactor
 from twisted.python import log
 from twisted.internet.defer import Deferred as D
 import traceback
 
-#def stack():
-#    print 'The python stack:'
-#    traceback.print_stack()
-#    err.printTraceback()
-#    d = D()
-#    d.addCallback(start_app)
-#    d.addErrback(command_die)
-#    d.callback(0)    
+def stack():
+    print 'The python stack:'
+    traceback.print_stack()
+    err.printTraceback()
+    d = D()
+    d.addCallback(start_app)
+    d.addErrback(command_die)
+    d.callback(0)    
 
 
 
