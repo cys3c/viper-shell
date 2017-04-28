@@ -31,7 +31,8 @@ rm -rf build/
 rm -rf dist/
 sed -i 's/console=True/console=False/g' ViperClient.spec
 wine pyinstaller ViperClient.spec
-mv dist/ViperClient.exe .
+cp dist/ViperClient.exe .
+cp dist/ViperClient.exe ../www/html/
 rm -rf build/
 rm -rf dist/
 cd ../

