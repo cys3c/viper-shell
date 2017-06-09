@@ -12,7 +12,7 @@ from twisted.internet.protocol import Factory
 
 #import the development protocol and factory
 
-from experiment.py import viper, CONSOLEFactory
+from teamserverdev.py import viper, CONSOLEFactory
 
 from twisted.internet import protocol, reactor
 from twisted.python import log

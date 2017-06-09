@@ -87,6 +87,7 @@ def connect():
             print '[+] listening for incoming TCP connection on ip address %s and port number %d' % ('ip', port)
             conn, addr = s.accept()
             print '[+] We got a connection from: ',addr
+            print '[+] for now to change directorys to folders with spaces use shortname (eg. cd c:\PROGRA~1)'
             break
 
         while True:

