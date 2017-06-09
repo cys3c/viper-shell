@@ -4,7 +4,8 @@ Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar
 
 ***VIPER***
 
-"""
+'''
+
 This is viper!
 
 Viper is designed in order to retrieve compromised files, processes, and services in case you have to reach out and grab information quickly. 
@@ -16,33 +17,55 @@ This program was created as a basic function to reach out and grab things fast! 
 
 I have recently added a twisted webserver and chat server for teamdevops
 
-"""
+'''
 
-viper has been tested on kali 2.0
+viper has been tested on kali 2.0 x86
 
-***The installer.sh will do this for you***
+***Instalation instructions***
 
-usage
+***The installer.sh should do this for you***
+
+***Install commands***
+
 chmod +x installer.sh
+
 ./installer.sh
+
 The installer will back up your ~/.bashrc file and This should do the tricks and get you up and running. 
+
 You will need to verify the installer adds the python path to the end of the ~/.bashrc
 
-Quick help
+Quick pythonpath help commands
+
 echo export PYTHONPATH="" >> ~/.bashrc
+
 source ~/.bashrc
 
 ***libraries installed and current requirements check install.sh for mods***
+
+'''
+
 python-twisted +16.6;
+
 PyCrypto;
+
 pyOpenSSl;
+
 Zope interface;
+
 python 2.7;
+
 python-2.7.13.msi;
+
 pyinstaller-3.1.1;
+
 future-0.16.0;
+
 wine;
+
 winetricks;
+
+'''
 
 Usage:
 
