@@ -2,18 +2,18 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: http://www.blacksignals.ca
 
 Files: *
-Copyright: 2006-2017, blacksignals
+Copyright: 2017-2025, blacksignals
 License: BSD-3-clause
 
-# The Viper is provided under the 3-clause BSD license provided
-# at the end of this file.
-#
-# The copyright on this package is held by BlackSignals
-#
-# This license does not apply to third-party components detailed below.
-#
-# Last updated: 2017-06
-#
+The Viper is provided under the 3-clause BSD license provided
+at the end of this file.
+
+The copyright on this package is held by BlackSignals
+
+This license does not apply to third-party components detailed below.
+
+Last updated: 2017-06
+
 
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without modification,
