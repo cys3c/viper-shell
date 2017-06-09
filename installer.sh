@@ -10,7 +10,7 @@ echo ""
 echo "permissions set now read this first *Important this is in development. Please take a snapshot before install"
 echo ""
 echo "This is the install for Viper Framework and before you run this script make sure that you navigate 
-to payloads/ViperClient.py and change the IPADDESS and PORT number that you want client to call back to. 
+to /application/payloads/ViperClient.py and change the IPADDESS and PORT number that you want client to call back to. 
 You will only have to run this installation script once, we are not updating your kali but only grabbing 
 specific installation items for Viper. This program has only been tested on X86 Kali 2.0 for PWK. If you have 
 not changed the IP address and port number inside ViperClient.py then hit Ctrl-T and go do that. 
@@ -19,7 +19,7 @@ ViperClient.py press any key to continue"
 
 echo ""
 echo "Important first change this line to your own correct settings s.connect(('0.0.0.0', 8081)), 
-inside payloads/ViperClient.py"
+inside /application/payloads/ViperClient.py"
 echo ""
 echo ""
 echo "Viper will autostart and your should scroll through the install to see what is happening"
