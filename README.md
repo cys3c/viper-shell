@@ -2,7 +2,7 @@
 Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar).
 //=> Copyright (c) 2017 jinverar
 
-VIPER
+***VIPER***
 
 """
 This is viper and designed to control remote fangs that get deployed on computers in defense of exploitation frameworks!
@@ -14,12 +14,9 @@ This program was created as a basic function to reach out and grab things fast! 
 
 I have recently added a twisted webserver and chat server for teamdevops
 
-
-Requirements
-
 viper has been tested on kali 2.0
 
-*****The installer.sh will do this for you***
+***The installer.sh will do this for you***
 
 usage
 chmod +x installer.sh
@@ -31,7 +28,7 @@ Quick help
 echo export PYTHONPATH="" >> ~/.bashrc
 source ~/.bashrc
 
-libraries installed
+***libraries installed and current requirements check install.sh for mods***
 python-twisted +16.6;
 PyCrypto;
 pyOpenSSl;
@@ -45,13 +42,14 @@ winetricks;
 
 Usage:
 
-to start the viper console:
+***to start the viper console:***
+
 Navigate into the payloads and change the ip address and port number inside the client
 
 $$> chmod +x start-teamserver.sh
 $$> ./start-teamserver.sh
 
-usage:
+***usage:***
 
 start the handler first and then start the client on the target machine
 

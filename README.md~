@@ -62,7 +62,7 @@ viper main commands:
 
 [*] client2exe ========= > "creates a basic exe file from viperclient.py and stores it inside payloads"; 
 
-Inside viper client modify these two lines with your ip address
+Inside viper client modify these two lines with your local ip address
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
