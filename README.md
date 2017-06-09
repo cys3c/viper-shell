@@ -5,14 +5,18 @@ Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar
 ***VIPER***
 
 """
-This is viper and designed to control remote fangs that get deployed on computers in defense of exploitation frameworks!
-Viper is designed in order to retrieve compromised files, processes, and services in case you have to reach out and grab information. 
-The viper can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions.
-This also has team server capabilities *Still working out bugs
+This is viper!
+
+Viper is designed in order to retrieve compromised files, processes, and services in case you have to reach out and grab information quickly. 
+The viper can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensive actions.
+
+Viper also has team server capabilities *I am still working out bugs but it works great currently with command line
 
 This program was created as a basic function to reach out and grab things fast! Powered by twisted python. 
 
 I have recently added a twisted webserver and chat server for teamdevops
+
+"""
 
 viper has been tested on kali 2.0
 
