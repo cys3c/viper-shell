@@ -5,19 +5,33 @@ Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar
 VIPER
 
 """
-This is viper and designed to control remote clients that get deployed on computers in defense of exploitation frameworks!
-The viper is designed in order to retrieve compromised files, processes, and services in case you have to reach out and grab information. 
-the viper can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions.
+This is viper and designed to control remote fangs that get deployed on computers in defense of exploitation frameworks!
+Viper is designed in order to retrieve compromised files, processes, and services in case you have to reach out and grab information. 
+The viper can also be used for testing exploitation and enumeration for the purpose of learning offensive for defensible actions.
+This also has team server capabilities *Still working out bugs
 
-This program was created as a basic function to reach out and grab things fast! Powered by python. 
+This program was created as a basic function to reach out and grab things fast! Powered by twisted python. 
+
+I have recently added a twisted webserver and chat server for teamdevops
 
 
 Requirements
 
 viper has been tested on kali 2.0
 
-The installer.sh will do this for you
+*****The installer.sh will do this for you***
 
+usage
+chmod +x installer.sh
+./installer.sh
+The installer will back up your ~/.bashrc file and This should do the tricks and get you up and running. 
+You will need to verify the installer adds the python path to the end of the ~/.bashrc
+
+Quick help
+echo export PYTHONPATH="" >> ~/.bashrc
+source ~/.bashrc
+
+libraries installed
 python-twisted +16.6;
 PyCrypto;
 pyOpenSSl;
@@ -31,14 +45,11 @@ winetricks;
 
 Usage:
 
-start the viper console:
-
-$$> chmod +x viper.py
-
-$$> python viper.py
-
+to start the viper console:
 Navigate into the payloads and change the ip address and port number inside the client
 
+$$> chmod +x start-teamserver.sh
+$$> ./start-teamserver.sh
 
 usage:
 
@@ -51,7 +62,7 @@ viper main commands:
 
 [*] client2exe ========= > "creates a basic exe file from viperclient.py and stores it inside payloads"; 
 
-Inside viper client modify these two lines with your ip address
+Inside viper client modify these two lines with your local ip address
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
