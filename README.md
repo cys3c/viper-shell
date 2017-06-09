@@ -19,6 +19,8 @@ viper has been tested on kali 2.0 x86
 
 The installer.sh should install everything for you
 
+Important note: You may want to take a virtual-image snapshot before running installer.sh. This should work perfectly though. 
+
 ***Install commands***
 
 ```
