@@ -2,9 +2,9 @@
 Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar).
 //=> Copyright (c) 2017 jinverar
 
-##VIPER
+***VIPER***
 
-*
+```
 
 This is viper!
 
@@ -17,11 +17,11 @@ This program was created as a basic function to reach out and grab things fast! 
 
 I have recently added a twisted webserver and chat server for teamdevops
 
-*
+```
 
 viper has been tested on kali 2.0 x86
 
-###Instalation instructions
+***Instalation instructions***
 
 ***The installer.sh should do this for you***
 
@@ -41,7 +41,7 @@ echo export PYTHONPATH="" >> ~/.bashrc
 
 source ~/.bashrc
 
-###libraries installed and current requirements check install.sh for mods
+***libraries installed and current requirements check install.sh for mods***
 
 ```
 
@@ -67,7 +67,7 @@ winetricks;
 
 ```
 
-###Usage:
+***Usage:***
 
 ***to start the viper console:***
 
@@ -82,6 +82,8 @@ start the handler first and then start the client on the target machine
 
 viper main commands:
 
+```
+
 [*] handler ========= > "starts the viper server and waits for a call back" 
 
 [*] buildfang ========= > "creates a basic exe file from viperclient.py and stores it inside payloads"; 
@@ -94,8 +96,9 @@ viper main commands:
 
 [*] stopweb ========= > stops the webserver
 
+```
 
-###build fang pre-instructions***
+***build fang pre-instructions***
 
 Inside viper client modify these two lines with your local ip address
 
@@ -107,6 +110,8 @@ Inside viper client modify these two lines with your local ip address
 ***viper connection commands:***
 
 use these once you get the call back from the client. first you will need to enter in the local host and port number that you assigned to the client before deploying. 
+
+```
 
 [*] grab*<filename> ========= > grabs the file and saves it to the local desktop as .txt";
 
@@ -121,6 +126,9 @@ use these once you get the call back from the client. first you will need to ent
 [*] Cover        ========= > Delete all traces of logs"; todo
 
 ```
+
+```
+
 Contributing
 
     Fork it!
