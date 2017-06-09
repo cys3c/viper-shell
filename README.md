@@ -2,9 +2,9 @@
 Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar).
 //=> Copyright (c) 2017 jinverar
 
-***VIPER***
+##VIPER
 
-'''
+*
 
 This is viper!
 
@@ -17,11 +17,11 @@ This program was created as a basic function to reach out and grab things fast! 
 
 I have recently added a twisted webserver and chat server for teamdevops
 
-'''
+*
 
 viper has been tested on kali 2.0 x86
 
-***Instalation instructions***
+###Instalation instructions
 
 ***The installer.sh should do this for you***
 
@@ -41,9 +41,9 @@ echo export PYTHONPATH="" >> ~/.bashrc
 
 source ~/.bashrc
 
-***libraries installed and current requirements check install.sh for mods***
+###libraries installed and current requirements check install.sh for mods
 
-'''
+```
 
 python-twisted +16.6;
 
@@ -65,9 +65,9 @@ wine;
 
 winetricks;
 
-'''
+```
 
-Usage:
+###Usage:
 
 ***to start the viper console:***
 
@@ -95,7 +95,7 @@ viper main commands:
 [*] stopweb ========= > stops the webserver
 
 
-***build fang pre-instructions***
+###build fang pre-instructions***
 
 Inside viper client modify these two lines with your local ip address
 
@@ -120,7 +120,7 @@ use these once you get the call back from the client. first you will need to ent
 
 [*] Cover        ========= > Delete all traces of logs"; todo
 
-
+```
 Contributing
 
     Fork it!
@@ -128,3 +128,4 @@ Contributing
     Commit your changes: git commit -am 'Add some feature'
     Push to the branch: git push origin my-new-feature
     Submit a Pull Request
+```

@@ -4,7 +4,7 @@ Copyright © 2017, [Jinverar owner of black signals](https://github.com/jinverar
 
 ***VIPER***
 
-"""
+'''
 
 This is viper!
 
@@ -17,7 +17,7 @@ This program was created as a basic function to reach out and grab things fast! 
 
 I have recently added a twisted webserver and chat server for teamdevops
 
-"""
+'''
 
 viper has been tested on kali 2.0 x86
 
