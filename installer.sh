@@ -4,8 +4,8 @@
 # ------------------------------------------------------------
 
 echo "setting permissions......"
-chmod +x viper.py
-chmod +x modules/handler/ViperServer.py
+chmod +x start-teamserver.sh
+chmod +x /application/services/viperserver.py
 echo ""
 echo "permissions set now read this first *Important this is in development. Please take a snapshot before install"
 echo ""
