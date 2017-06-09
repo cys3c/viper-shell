@@ -60,10 +60,10 @@ winetricks;
 
 ***to start the viper console:***
 
-Navigate into the payloads and change the ip address and port number inside the client
-
+```
 $$> chmod +x start-teamserver.sh
 $$> ./start-teamserver.sh
+```
 
 ***usage:***
 
